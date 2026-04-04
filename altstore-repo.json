@@ -59,6 +59,7 @@
             "developerName": "level3tjg",
             "subtitle": "iOS Tweak - Filter out unwanted content from your Reddit feed",
             "localizedDescription": "No description.",
+            "tintColor": "#d46e3f",
             "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.reddit.Reddit.png",
             "versions": [
                 {
