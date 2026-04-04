@@ -60,7 +60,7 @@
             "developerName": "level3tjg",
             "subtitle": "iOS Tweak - Filter out unwanted content from your Reddit feed",
             "localizedDescription": "Remove ads and promoted posts from the official Reddit app.",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.reddit.Reddit.png",
             "tintColor": "#d4751c",
             "versions": [
                 {
@@ -120,7 +120,7 @@
             "developerName": "Nyasami",
             "subtitle": "The \"cleaner\" Esign app.",
             "localizedDescription": "Ksign\n\n\nYet another codesigning app, have you ever wondered what if Feather and Esign had a child?\nWhy?\nSince Esign is end of service so people been moving to other signing apps, but Esign was a really big part of the community, so with the help of Feather as the base app, I tried to recreate Esign ...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/nya.asami.ksign.png",
             "tintColor": "#4547d1",
             "versions": [
                 {
@@ -201,7 +201,7 @@
             "developerName": "CloudySn0w",
             "subtitle": "\ud83d\udca7 BTLoader! The Future For iOS.",
             "localizedDescription": "BoundTweak Loader. Always been its name.\nThis repository is archived and no longer maintained.\nAfter around three years of collaboration, the partnership ended due to a fundamental breach of trust. I will not continue development or support.\nThe code remains available under its existing OSL 3.0 lice...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.hammerandchisel.discord.png",
             "tintColor": "#1518e6",
             "versions": [
                 {
@@ -261,7 +261,7 @@
             "developerName": "Ferrite-iOS",
             "subtitle": "A media search engine for iOS with debrid support",
             "localizedDescription": "Ferrite\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA media search engine for iOS with a plugin API to extend its functionality.\nScreenshots\nDark Mode\n| Search | Bookmarks | History |\n| ------------- | -------- | -------- |\n|  |  |  |\n| Debrid Cloud | Plugins |\n| ----------- | -------------------- |\n|  |  |\nLig...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/me.kingbri.ferrite.png",
             "tintColor": "#e68b15",
             "versions": [
                 {
@@ -321,7 +321,7 @@
             "developerName": "jailbreakdotparty",
             "subtitle": "A jailed app store app downgrader, based off of MuffinStoreJailed. Supports iOS 16.4+ and does not use any exploits.",
             "localizedDescription": "PancakeStore\nA jailed app store app downgrader, based off of MuffinStoreJailed. Supports iOS 16.4+ and does not use any exploits.\nLatest Release \u2022 Support Server \u2022 Website \u2022 Original Project (by mineek)\n\n[!WARNING]\nUse this tool at your own risk! You may lose app data, and other damage could occur.\n...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.jbdotparty.PancakeStore.png",
             "tintColor": "#e68b15",
             "versions": [
                 {
@@ -339,7 +339,7 @@
             "developerName": "EduAlexxis",
             "subtitle": "The first app of its kind: seamless, on-device music and ringtone injection for iOS. Bypass iTunes and manage your native library directly. Auto-fetch metadata, organize playlists, and keep your files clean. The true local music experience is here.",
             "localizedDescription": "ByeTunes \ud83c\udfb5\nSay goodbye to iTunes sync!\nByeTunes is a native iOS app that lets you inject music (MP3, M4A, FLAC, WAV) and ringtones directly into your device's media library\u2014without needing a computer connection for every sync. It communicates directly with the iOS media database, giving you the powe...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.EduAlexxis.MusicManager.png",
             "tintColor": "#14100b",
             "versions": [
                 {
@@ -378,7 +378,7 @@
             "developerName": "getzemani63",
             "subtitle": "SUMEE is a highly stylized, nostalgic iOS launcher and frontend inspired by the PS Vita interface and the Frutiger Aero design language.",
             "localizedDescription": "SUMEE (Lite)\n\n\u26a0\ufe0f Important Update: This repository is a refactored Lite fork of my original SUMEE! codebase. The work focused on reducing project size, splitting large files into smaller modules, and improving maintainability. English \u2194 Spanish translation tasks were also streamlined in this version...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/GetzemaniCruz.sumee.lite.png",
             "tintColor": "#14100b",
             "versions": [
                 {
@@ -403,7 +403,7 @@
             "developerName": "LiveContainer",
             "subtitle": "Run iOS apps without actually installing them!",
             "localizedDescription": "LiveContainer\nAn app launcher that runs iOS apps without actually installing them! \n\n\n\nCrowdin Project: [![Crowdin](https://badges.crowdin.net/livecontainer/localized.svg)](https://crowdin.com/project/livecontainer) \u00a0| \u00a0 Documentation:[liveconainer.github.io](https://livecontainer.github.io/docs/int...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.kdt.l!vecontainer.png",
             "tintColor": "#4e2278",
             "versions": [
                 {
@@ -540,7 +540,7 @@
             "developerName": "YangJiiii",
             "subtitle": "EnsWilde is a tool utilizing itunesstored & bookassetd exploits, designed for iPhone and iPad running the latest iOS Version 26.2b1.",
             "localizedDescription": "EnsWilde (Mobile)\nEnsWilde is a tool utilizing itunesstored & bookassetd exploits, designed for iPhone and iPad running the latest iOS Version 26.2b1.\nIt operates as a standalone on-device application, functioning independently like modern apps. It leverages the sparserestore exploit to write data t...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.yangjiii.EnsWilde.png",
             "tintColor": "#db7e21",
             "versions": [
                 {
@@ -586,7 +586,7 @@
             "developerName": "MeloNX Team",
             "subtitle": "Switch emulator for iOS.",
             "localizedDescription": "Switch emulator for iOS.",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.stossy11.MeloNX.png",
             "tintColor": "#e3221b",
             "versions": [
                 {
@@ -702,7 +702,7 @@
             "developerName": "Baconium",
             "subtitle": "JESSI (Java Edition Servers Suck on Ios) is a jailed app for ios 14+ that runs minecraft servers directly on device!",
             "localizedDescription": "JESSI\n\nJava Edition Servers Suck on iOS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBasic Information \u2022\n  LiveContainer \u2022\n  Features \u2022\n  Build / Misc\n\nIf you would like support, want to request a feature, or just talk to other JESSI users you should join the discord: https://discord.gg/aZ9HbYXKur\nBasic Information\nJESSI is an i...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.baconmania.jessi.png",
             "tintColor": "#1e5c17",
             "versions": [
                 {
