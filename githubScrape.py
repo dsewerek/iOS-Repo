@@ -5,6 +5,9 @@ import os
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, quote_plus
 
+# Pollinations.ai API key
+POLLINATIONS_API_KEY = "pk_GUOSx4tlurUvXLS7"
+
 # Ensure directory exists
 os.makedirs("scrapedIcons", exist_ok=True)
 
@@ -20,6 +23,33 @@ except FileNotFoundError as e:
 myAppTable = ""
 scrapedAppTable = ""
 
+# Helper: Generate description and tint color via Pollinations.ai
+def generate_with_ai(app_name, readme_content):
+    prompt = f"Given this iOS app '{app_name}' with README:\n\n{readme_content[:500]}\n\nRespond ONLY with JSON (no markdown): {{'description': 'short 1-2 sentence description', 'tintColor': 'hex color like #FF5733'}}"
+    
+    try:
+        res = requests.post(
+            "https://api.pollinations.ai/v1/chat/completions",
+            json={
+                "model": "nova-fast",
+                "messages": [{"role": "user", "content": prompt}],
+                "max_tokens": 200
+            },
+            headers={"Authorization": f"Bearer {POLLINATIONS_API_KEY}"},
+            timeout=15
+        )
+        if res.status_code == 200:
+            data = res.json()
+            content = data["choices"][0]["message"]["content"].strip()
+            # Remove markdown code blocks if present
+            content = content.replace("```json", "").replace("```", "").strip()
+            result = json.loads(content)
+            return result.get("description", "No description"), result.get("tintColor", "#007AFF")
+    except Exception as e:
+        print(f"AI generation failed: {e}")
+    
+    return None, "#007AFF"
+
 # Process 'My Apps' (Manual/Static list)
 for app in myApps.get("apps", []):
     gh = app.get('github', '')
@@ -33,7 +63,6 @@ def fetch_github_readme(repo):
         res = requests.get(readme_url, timeout=10)
         if res.status_code == 200:
             return res.text
-        # Try master branch if main fails
         readme_url = f"https://raw.githubusercontent.com/{repo}/master/README.md"
         res = requests.get(readme_url, timeout=10)
         if res.status_code == 200:
@@ -50,7 +79,6 @@ def fetch_gitlab_readme(host, path):
         res = requests.get(readme_url, timeout=10)
         if res.status_code == 200:
             return res.text
-        # Try master branch
         readme_url = f"https://{host}/api/v4/projects/{path_encoded}/repository/files/README.md/raw?ref=master"
         res = requests.get(readme_url, timeout=10)
         if res.status_code == 200:
@@ -69,6 +97,7 @@ for repo_info in scraping:
     author = repo_info.get("author", "Unknown")
     subtitle = repo_info.get("description", "No description.")
     description = repo_info.get("description", "No description.")
+    tintColor = repo_info.get("tintColor", "#007AFF")
     link = "#"
 
     print(f"Processing: {name}")
@@ -98,13 +127,19 @@ for repo_info in scraping:
             # Fetch full README
             readme_content = fetch_github_readme(repo)
             if readme_content:
-                description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
+                # Generate AI description and tint color
+                ai_desc, ai_color = generate_with_ai(name, readme_content)
+                if ai_desc:
+                    description = ai_desc
+                    tintColor = ai_color
+                else:
+                    # Fallback to markdown parsing
+                    description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
             
             rel_api = f"{api_url}/releases"
             releases = requests.get(rel_api).json()
             
             for rel in releases:
-                # Find the first .ipa asset
                 asset = next((a for a in rel.get("assets", []) if a["name"].endswith(".ipa")), None)
                 if asset:
                     versions.append({
@@ -125,10 +160,15 @@ for repo_info in scraping:
         link = repo_info["gitlab"]
         
         try:
-            # Fetch full README
             readme_content = fetch_gitlab_readme(host, path)
             if readme_content:
-                description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
+                # Generate AI description and tint color
+                ai_desc, ai_color = generate_with_ai(name, readme_content)
+                if ai_desc:
+                    description = ai_desc
+                    tintColor = ai_color
+                else:
+                    description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
             
             path_encoded = quote_plus(path.lstrip('/'))
             rel_api = f"https://{host}/api/v4/projects/{path_encoded}/releases"
@@ -173,6 +213,7 @@ for repo_info in scraping:
         "subtitle": subtitle,
         "localizedDescription": description,
         "iconURL": final_icon,
+        "tintColor": tintColor,
         "versions": versions
     }
     myApps["apps"].append(app_entry)
