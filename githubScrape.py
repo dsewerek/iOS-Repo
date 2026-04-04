@@ -11,7 +11,7 @@ os.makedirs("scrapedIcons", exist_ok=True)
 # 1. Load Data
 try:
     myApps = json.load(open("resources/my-apps.json"))
-    scraping = json.load(open("resources/scraping.json"))
+    scraping = json.load(open("config.json"))  # CHANGED
     readMeTemplate = open("resources/README_template.txt").read()
 except FileNotFoundError as e:
     print(f"Error: Missing required file: {e}")
@@ -67,7 +67,7 @@ for repo_info in scraping:
     author = repo_info.get("author", "Unknown")
     subtitle = repo_info.get("description", "No description.")
     description = repo_info.get("description", "No description.")
-    tintColor = repo_info.get("tintColor", "#007AFF")  # From scraping.json
+    tintColor = repo_info.get("tintColor", "#007AFF")
     link = "#"
 
     print(f"Processing: {name}")
