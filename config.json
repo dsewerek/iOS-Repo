@@ -1,14 +1,138 @@
-{
-  "github_apps": [
-    "LiveContainer/LiveContainer",
-    "CloudySn0w/BTLoader"
-  ],
-  "custom_links": [
-    {
-      "name": "My Custom App",
-      "version": "1.0",
-      "bundleIdentifier": "com.example.app",
-      "downloadURL": "https://example.com/app.ipa"
-    }
-  ]
-}
+[
+  {
+    "name": "Get More Ram",
+    "bundleID": "hugeBlack.GetMoreRam",
+    "github": "hugeBlack/GetMoreRam",
+    "version": "nightly",
+    "author": "hugeBlack",
+    "description": "Optimize and manage system RAM on iOS devices."
+  },
+  {
+    "name": "Reddit Filter",
+    "bundleID": "com.reddit.Reddit",
+    "github": "level3tjg/RedditFilter",
+    "version": "2025.37.0",
+    "author": "level3tjg",
+    "description": "Remove ads and promoted posts from the official Reddit app."
+  },
+  {
+    "name": "Ksign",
+    "bundleID": "nya.asami.ksign",
+    "github": "Nyasami/Ksign",
+    "version": "beta",
+    "author": "Nyasami",
+    "description": "A mobile tool for signing and installing IPA files."
+  },
+  {
+    "name": "BTLoader (Discord)",
+    "bundleID": "com.hammerandchisel.discord",
+    "github": "CloudySn0w/BTLoader",
+    "version": "317.0",
+    "author": "CloudySn0w",
+    "description": "Discord client with plugin support."
+  },
+  {
+    "name": "Ferrite",
+    "bundleID": "me.kingbri.ferrite",
+    "github": "Ferrite-iOS/Ferrite",
+    "version": "0.7.3",
+    "author": "Ferrite-iOS",
+    "description": "Professional-grade audio recording and editing."
+  },
+  {
+    "name": "PancakeStore",
+    "bundleID": "com.jbdotparty.PancakeStore",
+    "github": "jailbreakdotparty/PancakeStore",
+    "version": "1.1",
+    "author": "jailbreakdotparty",
+    "description": "Community app store for sideloading."
+  },
+  {
+    "name": "ByeTunes",
+    "bundleID": "com.EduAlexxis.MusicManager",
+    "github": "EduAlexxis/ByeTunes",
+    "version": "V2.0",
+    "author": "EduAlexxis",
+    "description": "Alternative music manager for iOS."
+  },
+  {
+    "name": "SUMEE! Lite",
+    "bundleID": "GetzemaniCruz.sumee.lite",
+    "github": "getzemani63/sumee-lite",
+    "version": "1.0.5",
+    "author": "getzemani63",
+    "description": "Lightweight system management utility."
+  },
+  {
+    "name": "LiveContainer + SideStore",
+    "bundleID": "com.kdt.l!vecontainer",
+    "github": "LiveContainer/LiveContainer",
+    "version": "nightly",
+    "author": "LiveContainer",
+    "description": "Run guest apps in a sandboxed container."
+  },
+  {
+    "name": "EnsWilde",
+    "bundleID": "com.yangjiii.EnsWilde",
+    "github": "YangJiiii/EnsWilde",
+    "version": "3.1.3",
+    "author": "YangJiiii",
+    "description": "Advanced system enhancement suite."
+  },
+  {
+    "name": "MeloNX",
+    "bundleID": "com.stossy11.MeloNX",
+    "gitlab": "https://git.ryujinx.app/melonx/emu",
+    "version": "2.3.1",
+    "author": "MeloNX Team",
+    "description": "Switch emulator for iOS."
+  },
+  {
+    "name": "JESSI",
+    "bundleID": "com.baconmania.jessi",
+    "github": "Baconium/JESSI",
+    "version": "1.0.1",
+    "author": "Baconium",
+    "description": "Customization toolkit for modern iOS versions."
+  },
+  {
+    "name": "YTLitePlus",
+    "bundleID": "com.google.ios.youtube",
+    "github": "YTLitePlus/YTLitePlus",
+    "version": "19.14.2",
+    "author": "YTLitePlus",
+    "description": "YouTube with ad-blocking and background playback."
+  },
+  {
+    "name": "uYouEnhanced",
+    "bundleID": "com.google.ios.youtube.enhanced",
+    "github": "arichornlover/uYouEnhanced",
+    "version": "19.03.2",
+    "author": "arichornlover",
+    "description": "The ultimate YouTube mod with media downloading."
+  },
+  {
+    "name": "Delta",
+    "bundleID": "com.rileytestut.Delta",
+    "github": "rileytestut/Delta",
+    "version": "1.5.1",
+    "author": "Riley Testut",
+    "description": "Nintendo emulator supporting NES, SNES, N64, and GBA."
+  },
+  {
+    "name": "Enmity",
+    "bundleID": "com.enmity.discord",
+    "github": "enmity-mod/enmity",
+    "version": "1.2.1",
+    "author": "Enmity Team",
+    "description": "Modified Discord client with themes and plugins."
+  },
+  {
+    "name": "BHTwitter",
+    "bundleID": "com.atebits.Tweetie2",
+    "directURL": "https://github.com/BandarHL/BHTwitter/releases/download/4.2/BHTwitter_4.2.ipa",
+    "version": "4.2",
+    "author": "BandarHL",
+    "description": "Twitter with no ads and video downloading."
+  }
+]
