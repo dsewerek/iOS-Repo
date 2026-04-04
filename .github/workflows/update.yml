@@ -43,19 +43,5 @@ jobs:
           fi
           
           git commit -m "Auto-update AltStore repo"
-          
-          # Fetch latest to see what's on remote
-          git fetch origin main
-          
-          # Check if we're behind
-          if ! git merge-base --is-ancestor HEAD origin/main; then
-            echo "Local is ahead or diverged. Attempting rebase..."
-            git rebase origin/main || {
-              echo "Rebase failed, aborting and using force push..."
-              git rebase --abort
-              git push origin main --force-with-lease
-              exit 0
-            }
-          fi
-          
+          git pull origin main --ff-only
           git push origin main
