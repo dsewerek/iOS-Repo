@@ -156,17 +156,23 @@ for repo_info in scraping:
     icon_url = repo_info.get("iconURL")
     icon_dest = f"scrapedIcons/{bundleID}.png"
     final_icon = f"https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png"
-    
+
     if icon_url:
         try:
+            print(f"  → Downloading icon from: {icon_url}")
             res = requests.get(icon_url, timeout=10)
             if res.status_code == 200:
                 with open(icon_dest, "wb") as f:
                     f.write(res.content)
                 final_icon = f"https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/{icon_dest}"
+                print(f"  ✓ Icon saved: {icon_dest}")
+            else:
+                print(f"  ✗ Icon HTTP {res.status_code}: {icon_url}")
         except Exception as e:
-            print(f"Failed to download icon for {name}: {e}")
-
+            print(f"  ✗ Icon download failed: {e}")
+    else:
+        print(f"  ⚠ No iconURL in config for {name}")
+        
     # 4. Assemble
     app_entry = {
         "name": name,
