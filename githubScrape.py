@@ -4,6 +4,7 @@ import markdown
 import os
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, quote_plus
+import time
 
 # Pollinations.ai API key
 POLLINATIONS_API_KEY = "pk_GUOSx4tlurUvXLS7"
@@ -27,26 +28,35 @@ scrapedAppTable = ""
 def generate_with_ai(app_name, readme_content):
     prompt = f"Given this iOS app '{app_name}' with README:\n\n{readme_content[:500]}\n\nRespond ONLY with JSON (no markdown): {{'description': 'short 1-2 sentence description', 'tintColor': 'hex color like #FF5733'}}"
     
-    try:
-        res = requests.post(
-            "https://api.pollinations.ai/v1/chat/completions",
-            json={
-                "model": "nova-fast",
-                "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": 200
-            },
-            headers={"Authorization": f"Bearer {POLLINATIONS_API_KEY}"},
-            timeout=15
-        )
-        if res.status_code == 200:
-            data = res.json()
-            content = data["choices"][0]["message"]["content"].strip()
-            # Remove markdown code blocks if present
-            content = content.replace("```json", "").replace("```", "").strip()
-            result = json.loads(content)
-            return result.get("description", "No description"), result.get("tintColor", "#007AFF")
-    except Exception as e:
-        print(f"AI generation failed: {e}")
+    for attempt in range(3):
+        try:
+            res = requests.post(
+                "https://api.pollinations.ai/v1/chat/completions",
+                json={
+                    "model": "openai",
+                    "messages": [{"role": "user", "content": prompt}],
+                    "max_tokens": 200
+                },
+                headers={"Authorization": f"Bearer {POLLINATIONS_API_KEY}"},
+                timeout=60
+            )
+            if res.status_code == 200:
+                data = res.json()
+                content = data["choices"][0]["message"]["content"].strip()
+                content = content.replace("```json", "").replace("```", "").strip()
+                result = json.loads(content)
+                return result.get("description", "No description"), result.get("tintColor", "#007AFF")
+            else:
+                print(f"API error {res.status_code} for {app_name}, retrying...")
+        except requests.exceptions.Timeout:
+            if attempt < 2:
+                print(f"Timeout for {app_name}, retry {attempt + 1}/3...")
+                time.sleep(2)
+            else:
+                print(f"AI generation failed for {app_name}")
+        except Exception as e:
+            print(f"AI generation failed for {app_name}: {e}")
+            break
     
     return None, "#007AFF"
 
