@@ -130,7 +130,7 @@
   {
     "name": "BHTwitter",
     "bundleID": "com.atebits.Tweetie2",
-    "directURL": "https://github.com/BandarHL/BHTwitter/releases/download/4.2/BHTwitter_4.2.ipa",
+    "github": "BandarHL/BHTwitter",
     "version": "4.2",
     "author": "BandarHL",
     "description": "Twitter with no ads and video downloading."
