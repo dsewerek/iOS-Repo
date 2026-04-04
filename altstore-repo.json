@@ -1,9 +1,9 @@
 {
-    "name": "DanielTheManiel's Repo",
-    "subtitle": "i make things",
-    "iconURL": "https://avatars.githubusercontent.com/u/179581632",
-    "website": "https://github.com/Dan1elTheMan1el/IOS-Repo",
-    "tintColor": "#de1fe5",
+    "name": "dsewerek's Repo",
+    "subtitle": "cool stuff...",
+    "iconURL": "https://avatars.githubusercontent.com/u/208761714",
+    "website": "https://github.com/dsewerek/iOS-Repo",
+    "tintColor": "#33b537",
     "apps": [
         {
             "name": "LiveRedirect",
@@ -42,7 +42,7 @@
             "developerName": "hugeBlack",
             "subtitle": "A simple AltSign wrapper app that allows you to enable \"Increased Memory Limit\" to your sideloaded apps without using Xcode",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
             "versions": [
                 {
                     "version": "nightly",
@@ -59,8 +59,7 @@
             "developerName": "level3tjg",
             "subtitle": "iOS Tweak - Filter out unwanted content from your Reddit feed",
             "localizedDescription": "No description.",
-            "tintColor": "#d46e3f",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.reddit.Reddit.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.reddit.Reddit.png",
             "versions": [
                 {
                     "version": "2025.37.0-1.1.8",
@@ -119,7 +118,7 @@
             "developerName": "Nyasami",
             "subtitle": "The \"cleaner\" Esign app.",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/nya.asami.ksign.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/nya.asami.ksign.png",
             "versions": [
                 {
                     "version": "beta",
@@ -199,7 +198,7 @@
             "developerName": "CloudySn0w",
             "subtitle": "\ud83d\udca7 BTLoader! The Future For iOS.",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.hammerandchisel.discord.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.hammerandchisel.discord.png",
             "versions": [
                 {
                     "version": "317.0",
@@ -258,7 +257,7 @@
             "developerName": "Ferrite-iOS",
             "subtitle": "A media search engine for iOS with debrid support",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/me.kingbri.ferrite.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/me.kingbri.ferrite.png",
             "versions": [
                 {
                     "version": "0.7.3",
@@ -317,7 +316,7 @@
             "developerName": "jailbreakdotparty",
             "subtitle": "A jailed app store app downgrader, based off of MuffinStoreJailed. Supports iOS 16.4+ and does not use any exploits.",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.jbdotparty.PancakeStore.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.jbdotparty.PancakeStore.png",
             "versions": [
                 {
                     "version": "1.1",
@@ -334,7 +333,7 @@
             "developerName": "EduAlexxis",
             "subtitle": "The first app of its kind: seamless, on-device music and ringtone injection for iOS. Bypass iTunes and manage your native library directly. Auto-fetch metadata, organize playlists, and keep your files clean. The true local music experience is here.",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.EduAlexxis.MusicManager.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.EduAlexxis.MusicManager.png",
             "versions": [
                 {
                     "version": "V2.0",
@@ -372,7 +371,7 @@
             "developerName": "getzemani63",
             "subtitle": "SUMEE is a highly stylized, nostalgic iOS launcher and frontend inspired by the PS Vita interface and the Frutiger Aero design language.",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/GetzemaniCruz.sumee.lite.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/GetzemaniCruz.sumee.lite.png",
             "versions": [
                 {
                     "version": "1.0.5",
@@ -396,7 +395,7 @@
             "developerName": "LiveContainer",
             "subtitle": "Run iOS apps without actually installing them!",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.kdt.l!vecontainer.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.kdt.l!vecontainer.png",
             "versions": [
                 {
                     "version": "nightly",
@@ -532,7 +531,7 @@
             "developerName": "YangJiiii",
             "subtitle": "EnsWilde is a tool utilizing itunesstored & bookassetd exploits, designed for iPhone and iPad running the latest iOS Version 26.2b1.",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.yangjiii.EnsWilde.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.yangjiii.EnsWilde.png",
             "versions": [
                 {
                     "version": "EnsWilde3.1.3",
@@ -577,7 +576,7 @@
             "developerName": "Unknown",
             "subtitle": "No description.",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.stossy11.MeloNX.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.stossy11.MeloNX.png",
             "versions": [
                 {
                     "version": "2.3.1",
@@ -692,7 +691,7 @@
             "developerName": "Baconium",
             "subtitle": "JESSI (Java Edition Servers Suck on Ios) is a jailed app for ios 14+ that runs minecraft servers directly on device!",
             "localizedDescription": "No description.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.baconmania.jessi.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.baconmania.jessi.png",
             "versions": [
                 {
                     "version": "1.0.1",
