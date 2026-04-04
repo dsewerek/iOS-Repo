@@ -1,11 +1,9 @@
 name: Auto-update AltStore Repo
-
 on:
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-# Fix 1: Prevents multiple runs from overlapping
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -15,12 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fix 2: Get full history for merging/rebasing
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -40,15 +37,20 @@ jobs:
           
           git add altstore-repo.json README.md scrapedIcons/
           
-          # Don't fail if there's nothing to change
           if git diff --quiet && git diff --staged --quiet; then
             echo "No changes to update."
             exit 0
           fi
-
+          
           git commit -m "Auto-update AltStore repo"
           
-          # Fix 3: The "Sync Loop"
-          # We pull with rebase. If it fails, we try one more time.
-          git pull --rebase origin main
-          git push origin main || (git pull --rebase origin main && git push origin main)
+          # Retry loop with exponential backoff
+          for attempt in {1..3}; do
+            git pull --rebase origin main && git push origin main && exit 0
+            if [ $attempt -lt 3 ]; then
+              sleep $((2 ** attempt))
+            fi
+          done
+          
+          echo "Failed to push after 3 attempts"
+          exit 1
