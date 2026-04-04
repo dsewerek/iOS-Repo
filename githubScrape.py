@@ -107,7 +107,7 @@ for repo_info in scraping:
     # 3. Icon Download
     icon_url = repo_info.get("iconURL")
     icon_dest = f"scrapedIcons/{bundleID}.png"
-    final_icon = f"https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/empty.png"
+    final_icon = f"https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png"
     
     if icon_url:
         try:
@@ -115,7 +115,7 @@ for repo_info in scraping:
             if res.status_code == 200:
                 with open(icon_dest, "wb") as f:
                     f.write(res.content)
-                final_icon = f"https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/{icon_dest}"
+                final_icon = f"https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/{icon_dest}"
         except: pass
 
     # 4. Assemble
