@@ -18,5 +18,5 @@
 |<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.jbdotparty.PancakeStore.png" width="100" height="100" style="border-radius: 20px">|[PancakeStore](https://github.com/jailbreakdotparty/PancakeStore)|1.1|
 |<img src="https://ytliteplus.github.io/Logo.png" width="100" height="100" style="border-radius: 20px">|[YTLitePlus](https://github.com/YTLitePlus/YTLitePlus)|19.14.2|
 |<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ed/08/91/ed089193-2334-fd9b-752e-fc330791ee48/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/200x200ia-75.webp" width="100" height="100" style="border-radius: 20px">|[Delta](https://github.com/rileytestut/Delta)|1.5.1|
-|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.enmity.discord.png" width="100" height="100" style="border-radius: 20px">|[Enmity](https://github.com/enmity-mod/enmity)|1.2.1|
+|<img src="https://avatars.githubusercontent.com/u/101209876?s=280&v=4" width="100" height="100" style="border-radius: 20px">|[Enmity](https://github.com/enmity-mod/enmity)|1.2.1|
 |<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.atebits.Tweetie2.png" width="100" height="100" style="border-radius: 20px">|[BHTwitter](https://github.com/BandarHL/BHTwitter)|4.2|
