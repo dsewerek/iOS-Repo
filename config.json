@@ -1,0 +1,14 @@
+{
+  "github_apps": [
+    "LiveContainer/LiveContainer",
+    "CloudySn0w/BTLoader"
+  ],
+  "custom_links": [
+    {
+      "name": "My Custom App",
+      "version": "1.0",
+      "bundleIdentifier": "com.example.app",
+      "downloadURL": "https://example.com/app.ipa"
+    }
+  ]
+}
