@@ -7,11 +7,6 @@
    <img src="https://github.com/CelloSerenity/altdirect/blob/main/assets/png/AltSource_Blue.png?raw=true" alt="Add AltSource" width="200">
 </a>
 
-## My Apps:
-||Name|Version|
-|-|-|-|
-# MY APPS TABLE
-
 ## Auto scraped:
 ||Name|Version|
 |-|-|-|
