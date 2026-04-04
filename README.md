@@ -7,16 +7,25 @@
    <img src="https://github.com/CelloSerenity/altdirect/blob/main/assets/png/AltSource_Blue.png?raw=true" alt="Add AltSource" width="200">
 </a>
 
+## My Apps:
+||Name|Version|
+|-|-|-|
+|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/LiveRedirect/refs/heads/main/DynamicRedirect%20Extension/images/icon-256.png" width="100" height="100" style="border-radius: 20px">|[LiveRedirect](https://github.com/Dan1elTheMan1el/LiveRedirect)|1.1|
+
+
 ## Auto scraped:
-| | Name | Version |
-|---|---|---|
-|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/hugeBlack.GetMoreRam.png" width="100" height="100" style="border-radius: 20px">|[Get More Ram](https://github.com/hugeBlack/GetMoreRam)|nightly|
-|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.reddit.Reddit.png" width="100" height="100" style="border-radius: 20px">|[Reddit Filter](https://github.com/level3tjg/RedditFilter)|2025.37.0|
+||Name|Version|
+|-|-|-|
+|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/empty.png" width="100" height="100" style="border-radius: 20px">|[Get More Ram](https://github.com/hugeBlack/GetMoreRam)|nightly|
+|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.reddit.Reddit.png" width="100" height="100" style="border-radius: 20px">|[Reddit Filter](https://github.com/level3tjg/RedditFilter)|2025.37.0-1.1.8|
 |<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/nya.asami.ksign.png" width="100" height="100" style="border-radius: 20px">|[Ksign](https://github.com/Nyasami/Ksign)|beta|
 |<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.hammerandchisel.discord.png" width="100" height="100" style="border-radius: 20px">|[BTLoader (Discord)](https://github.com/CloudySn0w/BTLoader)|317.0|
 |<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/me.kingbri.ferrite.png" width="100" height="100" style="border-radius: 20px">|[Ferrite](https://github.com/Ferrite-iOS/Ferrite)|0.7.3|
 |<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.jbdotparty.PancakeStore.png" width="100" height="100" style="border-radius: 20px">|[PancakeStore](https://github.com/jailbreakdotparty/PancakeStore)|1.1|
-|<img src="https://ytliteplus.github.io/Logo.png" width="100" height="100" style="border-radius: 20px">|[YTLitePlus](https://github.com/YTLitePlus/YTLitePlus)|19.14.2|
-|<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ed/08/91/ed089193-2334-fd9b-752e-fc330791ee48/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/200x200ia-75.webp" width="100" height="100" style="border-radius: 20px">|[Delta](https://github.com/rileytestut/Delta)|1.5.1|
-|<img src="https://avatars.githubusercontent.com/u/101209876?s=280&v=4" width="100" height="100" style="border-radius: 20px">|[Enmity](https://github.com/enmity-mod/enmity)|1.2.1|
-|<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRznwvBgZGLXsg5Ehd8UBZbHb5MKRC_t1OzA&s" width="100" height="100" style="border-radius: 20px">|[BHTwitter](https://github.com/BandarHL/BHTwitter)|4.2|
+|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.EduAlexxis.MusicManager.png" width="100" height="100" style="border-radius: 20px">|[ByeTunes](https://github.com/EduAlexxis/ByeTunes)|V2.0|
+|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/GetzemaniCruz.sumee.lite.png" width="100" height="100" style="border-radius: 20px">|[SUMEE! Lite](https://github.com/getzemani63/sumee-lite)|1.0.5|
+|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.kdt.l!vecontainer.png" width="100" height="100" style="border-radius: 20px">|[LiveContainer + SideStore](https://github.com/LiveContainer/LiveContainer)|nightly|
+|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.yangjiii.EnsWilde.png" width="100" height="100" style="border-radius: 20px">|[EnsWilde](https://github.com/YangJiiii/EnsWilde)|EnsWilde3.1.3|
+|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.stossy11.MeloNX.png" width="100" height="100" style="border-radius: 20px">|[MeloNX](https://git.ryujinx.app/melonx/emu)|2.3.1|
+|<img src="https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/main/scrapedIcons/com.baconmania.jessi.png" width="100" height="100" style="border-radius: 20px">|[JESSI](https://github.com/Baconium/JESSI)|1.0.1|
+
