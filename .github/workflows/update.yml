@@ -2,18 +2,25 @@ name: Auto-update AltStore Repo
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight
-  workflow_dispatch: # Allows manual triggering
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+# This stops multiple runs from overlapping and fighting for the same 'main' branch
+concurrency:
+  group: update-repo
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to push changes back
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetches all history so rebase works correctly
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,28 +28,28 @@ jobs:
           python-version: '3.x'
 
       - name: Install Dependencies
-        run: |
-          pip install requests markdown beautifulsoup4
+        run: pip install requests markdown beautifulsoup4
 
       - name: Run Scraper Script
         run: python githubScrape.py
 
-      - name: Commit and Push Changes
+      - name: Sync and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # Stage the changes
           git add altstore-repo.json README.md scrapedIcons/
           
-          # Only commit if there are actual changes to prevent empty commit errors
+          # Check if there is actually anything new to commit
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Auto-update AltStore repo"
-            
-            # THE FIX: Pull remote changes and rebase your new commit on top of them
-            git pull --rebase origin main
-            
-            git push origin main
+            echo "No changes detected."
+            exit 0
+          fi
+
+          git commit -m "Auto-update AltStore repo"
           
+          # The key fix: Pull the latest remote changes again right before pushing
+          # If someone pushed while the script was running, this merges them in.
+          git pull --rebase origin main
+          
+          git push origin main
