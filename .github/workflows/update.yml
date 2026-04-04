@@ -5,22 +5,22 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-# This stops multiple runs from overlapping and fighting for the same 'main' branch
+# Fix 1: Prevents multiple runs from overlapping
 concurrency:
-  group: update-repo
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Needed to push changes back
+      contents: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0 # Fix 2: Get full history for merging/rebasing
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,23 +33,22 @@ jobs:
       - name: Run Scraper Script
         run: python githubScrape.py
 
-      - name: Sync and Push
+      - name: Commit and Force-Sync Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
           git add altstore-repo.json README.md scrapedIcons/
           
-          # Check if there is actually anything new to commit
+          # Don't fail if there's nothing to change
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes detected."
+            echo "No changes to update."
             exit 0
           fi
 
           git commit -m "Auto-update AltStore repo"
           
-          # The key fix: Pull the latest remote changes again right before pushing
-          # If someone pushed while the script was running, this merges them in.
+          # Fix 3: The "Sync Loop"
+          # We pull with rebase. If it fails, we try one more time.
           git pull --rebase origin main
-          
-          git push origin main
+          git push origin main || (git pull --rebase origin main && git push origin main)
