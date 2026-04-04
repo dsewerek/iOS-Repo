@@ -26,6 +26,39 @@ for app in myApps.get("apps", []):
     link = f"https://github.com/{gh}" if gh else "#"
     myAppTable += f"|<img src=\"{app['iconURL']}\" width=\"100\" height=\"100\" style=\"border-radius: 20px\">|[{app['name']}]({link})|{app['versions'][0]['version']}|\n"
 
+# Helper: Fetch README from GitHub
+def fetch_github_readme(repo):
+    try:
+        readme_url = f"https://raw.githubusercontent.com/{repo}/main/README.md"
+        res = requests.get(readme_url, timeout=10)
+        if res.status_code == 200:
+            return res.text
+        # Try master branch if main fails
+        readme_url = f"https://raw.githubusercontent.com/{repo}/master/README.md"
+        res = requests.get(readme_url, timeout=10)
+        if res.status_code == 200:
+            return res.text
+    except:
+        pass
+    return None
+
+# Helper: Fetch README from GitLab
+def fetch_gitlab_readme(host, path):
+    try:
+        path_encoded = quote_plus(path.lstrip('/'))
+        readme_url = f"https://{host}/api/v4/projects/{path_encoded}/repository/files/README.md/raw?ref=main"
+        res = requests.get(readme_url, timeout=10)
+        if res.status_code == 200:
+            return res.text
+        # Try master branch
+        readme_url = f"https://{host}/api/v4/projects/{path_encoded}/repository/files/README.md/raw?ref=master"
+        res = requests.get(readme_url, timeout=10)
+        if res.status_code == 200:
+            return res.text
+    except:
+        pass
+    return None
+
 # 2. Main Scraping Loop
 for repo_info in scraping:
     name = repo_info["name"]
@@ -62,6 +95,11 @@ for repo_info in scraping:
             author = repo_data.get("owner", {}).get("login", author)
             subtitle = repo_data.get("description", subtitle)
             
+            # Fetch full README
+            readme_content = fetch_github_readme(repo)
+            if readme_content:
+                description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
+            
             rel_api = f"{api_url}/releases"
             releases = requests.get(rel_api).json()
             
@@ -76,19 +114,26 @@ for repo_info in scraping:
                         "downloadURL": asset["browser_download_url"],
                         "size": asset["size"]
                     })
-        except: print(f"Failed GitHub scrape for {name}")
+        except Exception as e:
+            print(f"Failed GitHub scrape for {name}: {e}")
 
     # OPTION C: GITLAB
     elif "gitlab" in repo_info:
-        # Example: https://gitlab.com/user/repo
         parsed = urlparse(repo_info["gitlab"])
         host = parsed.netloc
-        path = quote_plus(parsed.path.lstrip('/'))
+        path = parsed.path
         link = repo_info["gitlab"]
         
         try:
-            rel_api = f"https://{host}/api/v4/projects/{path}/releases"
+            # Fetch full README
+            readme_content = fetch_gitlab_readme(host, path)
+            if readme_content:
+                description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
+            
+            path_encoded = quote_plus(path.lstrip('/'))
+            rel_api = f"https://{host}/api/v4/projects/{path_encoded}/releases"
             releases = requests.get(rel_api).json()
+            
             for rel in releases:
                 asset = next((l["direct_asset_url"] for l in rel.get("assets", {}).get("links", []) if l["name"].endswith(".ipa")), None)
                 if asset:
@@ -99,7 +144,8 @@ for repo_info in scraping:
                         "downloadURL": asset,
                         "size": 0
                     })
-        except: print(f"Failed GitLab scrape for {name}")
+        except Exception as e:
+            print(f"Failed GitLab scrape for {name}: {e}")
 
     if not versions:
         continue
@@ -116,7 +162,8 @@ for repo_info in scraping:
                 with open(icon_dest, "wb") as f:
                     f.write(res.content)
                 final_icon = f"https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/{icon_dest}"
-        except: pass
+        except Exception as e:
+            print(f"Failed to download icon for {name}: {e}")
 
     # 4. Assemble
     app_entry = {
