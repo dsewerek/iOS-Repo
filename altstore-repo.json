@@ -769,7 +769,7 @@
             "developerName": "rileytestut",
             "subtitle": "Delta is an all-in-one classic video game emulator for non-jailbroken iOS devices.",
             "localizedDescription": "Delta\n\nDelta is an all-in-one classic video game emulator for non-jailbroken iOS devices. \n\n\n\n\nDelta is an iOS application that allows you to emulate and play video games for several classic video game systems, including Game Boy Advance, Nintendo 64, and Nintendo DS. Delta is the spiritual successo...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.rileytestut.Delta.png",
             "tintColor": "#6a218f",
             "versions": [
                 {
@@ -857,7 +857,7 @@
             "developerName": "BandarHL",
             "subtitle": "Awesome tweak for Twitter",
             "localizedDescription": "BHTwitter\nAn awesome tweak for Twitter that enhances your experience with additional features and customization options. Get rid of ads, gain access to Twitter Blue features for free and much much more! \nFeatures\nPlease note that we heavily rely on feature flags. If a feature doesn't work anymore, i...",
-            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
+            "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.atebits.Tweetie2.png",
             "tintColor": "#2f76bd",
             "versions": [
                 {

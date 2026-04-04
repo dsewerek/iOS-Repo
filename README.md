@@ -22,6 +22,6 @@
 |<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.yangjiii.EnsWilde.png" width="100" height="100" style="border-radius: 20px">|[EnsWilde](https://github.com/YangJiiii/EnsWilde)|EnsWilde3.1.3|
 |<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.stossy11.MeloNX.png" width="100" height="100" style="border-radius: 20px">|[MeloNX](https://git.ryujinx.app/melonx/emu)|2.3.1|
 |<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.baconmania.jessi.png" width="100" height="100" style="border-radius: 20px">|[JESSI](https://github.com/Baconium/JESSI)|1.0.1|
-|<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png" width="100" height="100" style="border-radius: 20px">|[Delta](https://github.com/rileytestut/Delta)|1.6|
-|<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png" width="100" height="100" style="border-radius: 20px">|[BHTwitter](https://github.com/BandarHL/BHTwitter)|4.4|
+|<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.rileytestut.Delta.png" width="100" height="100" style="border-radius: 20px">|[Delta](https://github.com/rileytestut/Delta)|1.6|
+|<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.atebits.Tweetie2.png" width="100" height="100" style="border-radius: 20px">|[BHTwitter](https://github.com/BandarHL/BHTwitter)|4.4|
 
