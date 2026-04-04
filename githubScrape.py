@@ -4,12 +4,8 @@ import markdown
 import os
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, quote_plus
-import time
 
-# Pollinations.ai API key
-POLLINATIONS_API_KEY = "pk_GUOSx4tlurUvXLS7"
-
-# Ensure directory exists
+# Ensure directories exist
 os.makedirs("scrapedIcons", exist_ok=True)
 
 # 1. Load Data
@@ -23,42 +19,6 @@ except FileNotFoundError as e:
 
 myAppTable = ""
 scrapedAppTable = ""
-
-# Helper: Generate description and tint color via Pollinations.ai
-def generate_with_ai(app_name, readme_content):
-    prompt = f"Given this iOS app '{app_name}' with README:\n\n{readme_content[:500]}\n\nRespond ONLY with JSON (no markdown): {{'description': 'short 1-2 sentence description', 'tintColor': 'hex color like #FF5733'}}"
-    
-    for attempt in range(3):
-        try:
-            res = requests.post(
-                "https://api.pollinations.ai/v1/chat/completions",
-                json={
-                    "model": "openai",
-                    "messages": [{"role": "user", "content": prompt}],
-                    "max_tokens": 200
-                },
-                headers={"Authorization": f"Bearer {POLLINATIONS_API_KEY}"},
-                timeout=60
-            )
-            if res.status_code == 200:
-                data = res.json()
-                content = data["choices"][0]["message"]["content"].strip()
-                content = content.replace("```json", "").replace("```", "").strip()
-                result = json.loads(content)
-                return result.get("description", "No description"), result.get("tintColor", "#007AFF")
-            else:
-                print(f"API error {res.status_code} for {app_name}, retrying...")
-        except requests.exceptions.Timeout:
-            if attempt < 2:
-                print(f"Timeout for {app_name}, retry {attempt + 1}/3...")
-                time.sleep(2)
-            else:
-                print(f"AI generation failed for {app_name}")
-        except Exception as e:
-            print(f"AI generation failed for {app_name}: {e}")
-            break
-    
-    return None, "#007AFF"
 
 # Process 'My Apps' (Manual/Static list)
 for app in myApps.get("apps", []):
@@ -107,7 +67,7 @@ for repo_info in scraping:
     author = repo_info.get("author", "Unknown")
     subtitle = repo_info.get("description", "No description.")
     description = repo_info.get("description", "No description.")
-    tintColor = repo_info.get("tintColor", "#007AFF")
+    tintColor = repo_info.get("tintColor", "#007AFF")  # From scraping.json
     link = "#"
 
     print(f"Processing: {name}")
@@ -137,14 +97,10 @@ for repo_info in scraping:
             # Fetch full README
             readme_content = fetch_github_readme(repo)
             if readme_content:
-                # Generate AI description and tint color
-                ai_desc, ai_color = generate_with_ai(name, readme_content)
-                if ai_desc:
-                    description = ai_desc
-                    tintColor = ai_color
-                else:
-                    # Fallback to markdown parsing
-                    description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
+                description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
+                # Limit to 300 chars
+                if len(description) > 300:
+                    description = description[:300] + "..."
             
             rel_api = f"{api_url}/releases"
             releases = requests.get(rel_api).json()
@@ -172,13 +128,9 @@ for repo_info in scraping:
         try:
             readme_content = fetch_gitlab_readme(host, path)
             if readme_content:
-                # Generate AI description and tint color
-                ai_desc, ai_color = generate_with_ai(name, readme_content)
-                if ai_desc:
-                    description = ai_desc
-                    tintColor = ai_color
-                else:
-                    description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
+                description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
+                if len(description) > 300:
+                    description = description[:300] + "..."
             
             path_encoded = quote_plus(path.lstrip('/'))
             rel_api = f"https://{host}/api/v4/projects/{path_encoded}/releases"
