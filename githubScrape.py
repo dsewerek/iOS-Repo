@@ -17,6 +17,9 @@ except FileNotFoundError as e:
     print(f"Error: Missing required file: {e}")
     exit(1)
 
+# Clear old apps, only use config.json
+myApps["apps"] = []
+
 myAppTable = ""
 scrapedAppTable = ""
 
