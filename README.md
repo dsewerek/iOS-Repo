@@ -20,5 +20,8 @@
 |<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/GetzemaniCruz.sumee.lite.png" width="100" height="100" style="border-radius: 20px">|[SUMEE! Lite](https://github.com/getzemani63/sumee-lite)|1.0.5|
 |<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.kdt.l!vecontainer.png" width="100" height="100" style="border-radius: 20px">|[LiveContainer + SideStore](https://github.com/LiveContainer/LiveContainer)|nightly|
 |<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.yangjiii.EnsWilde.png" width="100" height="100" style="border-radius: 20px">|[EnsWilde](https://github.com/YangJiiii/EnsWilde)|EnsWilde3.1.3|
+|<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png" width="100" height="100" style="border-radius: 20px">|[YTLitePlus](https://github.com/YTLitePlus/YTLitePlus)|19.14.2|
+|<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png" width="100" height="100" style="border-radius: 20px">|[uYouEnhanced](https://github.com/arichornlover/uYouEnhanced)|19.03.2|
+|<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.enmity.discord.png" width="100" height="100" style="border-radius: 20px">|[Enmity](https://github.com/enmity-mod/enmity)|1.2.1|
 |<img src="https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.atebits.Tweetie2.png" width="100" height="100" style="border-radius: 20px">|[BHTwitter](https://github.com/BandarHL/BHTwitter)|4.4|
 
