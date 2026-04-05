@@ -7,7 +7,6 @@ from urllib.parse import urlparse, quote_plus
 
 # Ensure directories exist
 os.makedirs("scrapedIcons", exist_ok=True)
-os.makedirs("screenshots", exist_ok=True)
 
 # 1. Load Data
 try:
@@ -20,44 +19,6 @@ except FileNotFoundError as e:
 
 myAppTable = ""
 scrapedAppTable = ""
-
-# Helper: Fetch screenshots from GitHub
-def fetch_github_screenshots(repo):
-    screenshots = []
-    try:
-        # Check common screenshot folders
-        for folder in ["screenshots", "assets/screenshots", "docs/screenshots"]:
-            api_url = f"https://api.github.com/repos/{repo}/contents/{folder}"
-            res = requests.get(api_url, timeout=10)
-            if res.status_code == 200:
-                files = res.json()
-                if isinstance(files, list):
-                    for file in files:
-                        if file["name"].lower().endswith((".png", ".jpg", ".jpeg")):
-                            screenshots.append({
-                                "url": file["download_url"],
-                                "name": file["name"]
-                            })
-                    if screenshots:
-                        break
-    except:
-        pass
-    return screenshots
-
-# Helper: Download and cache screenshots
-def cache_screenshots(bundleID, screenshots):
-    cached_urls = []
-    for i, screenshot in enumerate(screenshots[:4]):  # Limit to 4 screenshots
-        try:
-            res = requests.get(screenshot["url"], timeout=10)
-            if res.status_code == 200:
-                filename = f"screenshots/{bundleID}_{i}.png"
-                with open(filename, "wb") as f:
-                    f.write(res.content)
-                cached_urls.append(f"https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/{filename}")
-        except:
-            pass
-    return cached_urls
 
 # Process 'My Apps' (Manual/Static list)
 for app in myApps.get("apps", []):
@@ -101,13 +62,13 @@ for repo_info in scraping:
     name = repo_info["name"]
     bundleID = repo_info["bundleID"]
     versions = []
-    screenshotURLs = []
     
     # Metadata Defaults
     author = repo_info.get("author", "Unknown")
     subtitle = repo_info.get("description", "No description.")
     description = repo_info.get("description", "No description.")
     tintColor = repo_info.get("tintColor", "#007AFF")
+    screenshotURLs = repo_info.get("screenshotURLs", [])
     link = "#"
 
     print(f"Processing: {name}")
@@ -138,12 +99,6 @@ for repo_info in scraping:
             readme_content = fetch_github_readme(repo)
             if readme_content:
                 description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
-            
-            # Fetch screenshots
-            screenshots = fetch_github_screenshots(repo)
-            if screenshots:
-                screenshotURLs = cache_screenshots(bundleID, screenshots)
-                print(f"  → Found {len(screenshotURLs)} screenshots")
             
             rel_api = f"{api_url}/releases"
             releases = requests.get(rel_api).json()
