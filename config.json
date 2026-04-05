@@ -130,7 +130,6 @@
     "name": "Vinyls",
     "bundleID": "com.nzaki.Vinyls",
     "github": "nzaki/Vinyls",
-    "version": "1.8",
     "author": "nzaki",
     "description": "Spotify client with custom themes and lyrics.",
     "tintColor": "#1DB954"
