@@ -106,16 +106,18 @@ for repo_info in scraping:
             rel_api = f"{api_url}/releases"
             releases = requests.get(rel_api).json()
             
-            for rel in releases:
-                asset = next((a for a in rel.get("assets", []) if a["name"].endswith(".ipa")), None)
-                if asset:
-                    versions.append({
-                        "version": rel["tag_name"].lstrip("v"),
-                        "date": rel["published_at"],
-                        "localizedDescription": BeautifulSoup(markdown.markdown(rel.get("body", "")), 'html.parser').get_text(),
-                        "downloadURL": asset["browser_download_url"],
-                        "size": asset["size"]
-                    })
+            # Check if releases is actually a list
+            if isinstance(releases, list):
+                for rel in releases:
+                    asset = next((a for a in rel.get("assets", []) if a["name"].endswith(".ipa")), None)
+                    if asset:
+                        versions.append({
+                            "version": rel["tag_name"].lstrip("v"),
+                            "date": rel["published_at"],
+                            "localizedDescription": BeautifulSoup(markdown.markdown(rel.get("body", "")), 'html.parser').get_text(),
+                            "downloadURL": asset["browser_download_url"],
+                            "size": asset["size"]
+                        })
         except Exception as e:
             print(f"Failed GitHub scrape for {name}: {e}")
 
@@ -135,33 +137,35 @@ for repo_info in scraping:
             rel_api = f"https://{host}/api/v4/projects/{path_encoded}/releases"
             releases = requests.get(rel_api).json()
             
-            for rel in releases:
-                asset = next((l["direct_asset_url"] for l in rel.get("assets", {}).get("links", []) if l["name"].endswith(".ipa")), None)
-                if asset:
-                    versions.append({
-                        "version": rel["tag_name"].lstrip("v"),
-                        "date": rel["released_at"],
-                        "localizedDescription": BeautifulSoup(markdown.markdown(rel.get("description", "")), 'html.parser').get_text(),
-                        "downloadURL": asset,
-                        "size": 0
-                    })
+            if isinstance(releases, list):
+                for rel in releases:
+                    asset = next((l["direct_asset_url"] for l in rel.get("assets", {}).get("links", []) if l["name"].endswith(".ipa")), None)
+                    if asset:
+                        versions.append({
+                            "version": rel["tag_name"].lstrip("v"),
+                            "date": rel["released_at"],
+                            "localizedDescription": BeautifulSoup(markdown.markdown(rel.get("description", "")), 'html.parser').get_text(),
+                            "downloadURL": asset,
+                            "size": 0
+                        })
         except Exception as e:
             print(f"Failed GitLab scrape for {name}: {e}")
 
     if not versions:
-    # Use manual version from config if no releases found
-    if repo_info.get("version"):
-        versions.append({
-            "version": repo_info.get("version", "1.0"),
-            "date": "2026-04-04T00:00:00Z",
-            "localizedDescription": description,
-            "downloadURL": repo_info.get("directURL", "#"),
-            "size": 0
-        })
-    else:
-        print(f"  ⚠ No releases and no manual version for {name}")
-        continue
-        
+        # Use manual version from config if no releases found
+        if repo_info.get("version"):
+            versions.append({
+                "version": repo_info.get("version"),
+                "date": "2026-04-04T00:00:00Z",
+                "localizedDescription": description,
+                "downloadURL": repo_info.get("directURL", "#"),
+                "size": 0
+            })
+            print(f"  ✓ Using manual version: {repo_info.get('version')}")
+        else:
+            print(f"  ⚠ No releases for {name}")
+            continue
+
     # 3. Icon Download
     icon_url = repo_info.get("iconURL")
     icon_dest = f"scrapedIcons/{bundleID}.png"
