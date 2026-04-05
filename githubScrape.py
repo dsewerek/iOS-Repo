@@ -98,9 +98,7 @@ for repo_info in scraping:
             readme_content = fetch_github_readme(repo)
             if readme_content:
                 description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
-                # Limit to 300 chars
-                if len(description) > 300:
-                    description = description[:300] + "..."
+                
             
             rel_api = f"{api_url}/releases"
             releases = requests.get(rel_api).json()
@@ -129,8 +127,7 @@ for repo_info in scraping:
             readme_content = fetch_gitlab_readme(host, path)
             if readme_content:
                 description = BeautifulSoup(markdown.markdown(readme_content), 'html.parser').get_text().strip()
-                if len(description) > 300:
-                    description = description[:300] + "..."
+                
             
             path_encoded = quote_plus(path.lstrip('/'))
             rel_api = f"https://{host}/api/v4/projects/{path_encoded}/releases"
