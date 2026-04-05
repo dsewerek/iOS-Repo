@@ -6,37 +6,6 @@
     "tintColor": "#33b537",
     "apps": [
         {
-            "name": "LiveRedirect",
-            "bundleIdentifier": "danielthemaniel.DynamicRedirect",
-            "developerName": "DanielTheManiel",
-            "subtitle": "Redirect any URLs to LiveContainer! (iOS <26)",
-            "localizedDescription": "Open matching webpages in LiveContainer from Safari on iOS using a lightweight Safari Web Extension.\n\nWhat it does:\n\u2022 Lets you maintain a list of URL or domain patterns (e.g., discord.com/invite, youtube.com).\n\u2022 When a visited page matches, the content script encodes the full URL as Base64 and redirects to: livecontainer://open-web-page?url=<base64>\n\u2022 Manage patterns directly in the extension popup (add, delete, import, export).\n\nUsing the extension:\nImportant: Sideload with app extensions enabled to use extension!\n\u2022 Add a pattern such as discord.com/invite or just github.com.\n\u2022 Visit a matching page; you should be redirected to the LiveContainer URL.\n\u2022 Import/Export via clipboard (JSON or newline list). The popup performs clipboard reads/writes only on user action.",
-            "iconURL": "https://raw.githubusercontent.com/Dan1elTheMan1el/LiveRedirect/refs/heads/main/DynamicRedirect%20Extension/images/icon-256.png",
-            "tintColor": "#04a49c",
-            "category": "utilities",
-            "github": "Dan1elTheMan1el/LiveRedirect",
-            "screenshots": [
-                "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/refs/heads/main/screenshots/LiveRedirector1.png",
-                "https://raw.githubusercontent.com/Dan1elTheMan1el/IOS-Repo/refs/heads/main/screenshots/LiveRedirector2.png"
-            ],
-            "versions": [
-                {
-                    "version": "1.1",
-                    "date": "2025-08-10T15:14:00-07:00",
-                    "localizedDescription": "Manual Redirect Option",
-                    "downloadURL": "https://github.com/Dan1elTheMan1el/LiveRedirect/releases/download/1.1/LiveRedirect1.1.ipa",
-                    "size": 643000
-                },
-                {
-                    "version": "1.0",
-                    "date": "2025-08-08T18:30:00-07:00",
-                    "localizedDescription": "Initial Release",
-                    "downloadURL": "https://github.com/Dan1elTheMan1el/LiveRedirect/releases/download/1.0/LiveRedirect1.0.ipa",
-                    "size": 652000
-                }
-            ]
-        },
-        {
             "name": "Get More Ram",
             "bundleIdentifier": "hugeBlack.GetMoreRam",
             "developerName": "hugeBlack",
@@ -532,12 +501,6 @@
                     "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa",
                     "size": 31173
                 }
-            ],
-            "screenshotURLs": [
-                "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/screenshots/com.kdt.l!vecontainer_0.png",
-                "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/screenshots/com.kdt.l!vecontainer_1.png",
-                "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/screenshots/com.kdt.l!vecontainer_2.png",
-                "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/screenshots/com.kdt.l!vecontainer_3.png"
             ]
         },
         {
