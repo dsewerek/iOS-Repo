@@ -89,24 +89,6 @@
     "tintColor": "#db7e21"
   },
   {
-    "name": "MeloNX",
-    "bundleID": "com.stossy11.MeloNX",
-    "gitlab": "https://git.ryujinx.app/melonx/emu",
-    "version": "2.3.1",
-    "author": "MeloNX Team",
-    "description": "Switch emulator for iOS.",
-    "tintColor": "#e3221b"
-  },
-  {
-    "name": "JESSI",
-    "bundleID": "com.baconmania.jessi",
-    "github": "Baconium/JESSI",
-    "version": "1.0.1",
-    "author": "Baconium",
-    "description": "Run Minecraft Java Servers on Android!.",
-    "tintColor": "#1e5c17"
-  },
-  {
     "name": "YTLitePlus",
     "bundleID": "com.google.ios.youtube",
     "github": "YTLitePlus/YTLitePlus",
@@ -123,16 +105,6 @@
     "author": "arichornlover",
     "description": "The ultimate YouTube mod with media downloading.",
     "tintColor": "#cf2f1d"
-  },
-  {
-    "name": "Delta",
-    "bundleID": "com.rileytestut.Delta",
-    "github": "rileytestut/Delta",
-    "version": "1.5.1",
-    "author": "Riley Testut",
-    "description": "Nintendo emulator supporting NES, SNES, N64, and GBA.",
-    "tintColor": "#6a218f",
-    "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ed/08/91/ed089193-2334-fd9b-752e-fc330791ee48/AppIcon-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-85-220.png/200x200ia-75.webp"
   },
   {
     "name": "Enmity",
@@ -153,5 +125,14 @@
     "description": "Twitter with no ads and video downloading.",
     "tintColor": "#2f76bd",
     "iconURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5LEV-ApZUO6OUnu1ulvL8F3L91AqHlpD0Hw&s"
+  },
+  {
+    "name": "Vinyls",
+    "bundleID": "com.nzaki.Vinyls",
+    "github": "nzaki/Vinyls",
+    "version": "1.8",
+    "author": "nzaki",
+    "description": "Spotify client with custom themes and lyrics.",
+    "tintColor": "#1DB954"
   }
 ]
