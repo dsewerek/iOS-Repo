@@ -149,8 +149,19 @@ for repo_info in scraping:
             print(f"Failed GitLab scrape for {name}: {e}")
 
     if not versions:
+    # Use manual version from config if no releases found
+    if repo_info.get("version"):
+        versions.append({
+            "version": repo_info.get("version", "1.0"),
+            "date": "2026-04-04T00:00:00Z",
+            "localizedDescription": description,
+            "downloadURL": repo_info.get("directURL", "#"),
+            "size": 0
+        })
+    else:
+        print(f"  ⚠ No releases and no manual version for {name}")
         continue
-
+        
     # 3. Icon Download
     icon_url = repo_info.get("iconURL")
     icon_dest = f"scrapedIcons/{bundleID}.png"
