@@ -532,6 +532,12 @@
                     "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/1.0/com.kdt.livecontainer.ipa",
                     "size": 31173
                 }
+            ],
+            "screenshotURLs": [
+                "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/screenshots/com.kdt.l!vecontainer_0.png",
+                "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/screenshots/com.kdt.l!vecontainer_1.png",
+                "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/screenshots/com.kdt.l!vecontainer_2.png",
+                "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/screenshots/com.kdt.l!vecontainer_3.png"
             ]
         },
         {
