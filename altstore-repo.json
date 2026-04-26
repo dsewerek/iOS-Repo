@@ -384,10 +384,10 @@
             "versions": [
                 {
                     "version": "nightly",
-                    "date": "2026-04-24T02:31:31Z",
-                    "localizedDescription": "Commit: 57ad231b2dbc51be1cb580cc1f7745b7a52b3fc5\nMessage: Fix #1300\nOnly ignores calling os_unfair_recursive_lock_* if it comes from current thread that called dlopen_nolock\nThis is a nightly release created automatically with GitHub Actions workflow.",
+                    "date": "2026-04-25T15:59:22Z",
+                    "localizedDescription": "Commit: 0e833c787b0b412462b8dea9c0583f88f2f4ec7b\nMessage: perload UIKit when applying idfv hook\nThis is a nightly release created automatically with GitHub Actions workflow.",
                     "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer%2BSideStore.ipa",
-                    "size": 34603917
+                    "size": 34604132
                 },
                 {
                     "version": "3.7.2",
