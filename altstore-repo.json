@@ -560,15 +560,15 @@
             "name": "YTLitePlus",
             "bundleIdentifier": "com.google.ios.youtube",
             "developerName": "YTLitePlus",
-            "subtitle": "\u26a0\ufe0f DEPRECATED \u2014 rewrite in progress. For now please use YTLite with tweaks by @dayanch96 instead.",
-            "localizedDescription": "[!WARNING]\nThis repository is deprecated and should not be used. A full rewrite is currently in progress.\nIn the meantime, use YTLite (with tweaks) by dayanch96.",
+            "subtitle": "\u26a0\ufe0f DEPRECATED \u2014 DEAD for now as YTPlus is now paid.",
+            "localizedDescription": "[!WARNING]\nThis repository is deprecated and should not be used. I may never update it as YTPlus is now paid.",
             "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
             "tintColor": "#cf2f1d",
             "versions": [
                 {
                     "version": "latest",
                     "date": "2026-04-04T00:00:00Z",
-                    "localizedDescription": "[!WARNING]\nThis repository is deprecated and should not be used. A full rewrite is currently in progress.\nIn the meantime, use YTLite (with tweaks) by dayanch96.",
+                    "localizedDescription": "[!WARNING]\nThis repository is deprecated and should not be used. I may never update it as YTPlus is now paid.",
                     "downloadURL": "#",
                     "size": 0
                 }
