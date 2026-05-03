@@ -391,10 +391,10 @@
             "versions": [
                 {
                     "version": "nightly",
-                    "date": "2026-05-01T07:36:25Z",
-                    "localizedDescription": "Commit: a9bfe930b22be5975cf03fdfdea1f569a7835957\nMessage: update issue template & bump version\nThis is a nightly release created automatically with GitHub Actions workflow.",
+                    "date": "2026-05-02T04:20:09Z",
+                    "localizedDescription": "Commit: 57dac9e3ccdda9d86b217b6871dfa9b0b30a462c\nMessage: Hook LSApplicationWorkspace instead of UIDevice for IDFV spoofing\nThis is a nightly release created automatically with GitHub Actions workflow.",
                     "downloadURL": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer%2BSideStore.ipa",
-                    "size": 34607513
+                    "size": 34607448
                 },
                 {
                     "version": "3.7.2",
@@ -521,17 +521,45 @@
             "name": "EnsWilde",
             "bundleIdentifier": "com.yangjiii.EnsWilde",
             "developerName": "YangJiiii",
-            "subtitle": "Advanced system enhancement suite.",
+            "subtitle": "EnsWilde is a tool utilizing itunesstored & bookassetd exploits, designed for iPhone and iPad running the latest iOS Version 26.2b1.",
             "localizedDescription": "EnsWilde (Mobile)\nEnsWilde is a tool utilizing itunesstored & bookassetd exploits, designed for iPhone and iPad running the latest iOS Version 26.2b1.\nIt operates as a standalone on-device application, functioning independently like modern apps. It leverages the sparserestore exploit to write data to files situated outside of the intended restore location.\n\n[!WARNING]\nDISCLAIMER:\nI am not responsible if your device enters a bootloop. Use this software with caution.\nPlease back up your data before using!\n\n\nFeatures\n\nDisable call recording notification sound: Turns off the audible alert when call recording starts.\nChange Apple Wallet background image: Customize the background appearance of Wallet passes/cards.\nEdit MobileGestalt file (advanced): Modify MobileGestalt configuration values (for advanced users).\nChange Passcode background: Customize the numeric keypad appearance using the .passthm interface.\nOn-device patching (no PC required): Operates as a standalone app after the initial setup.\nMore features coming soon: Development is ongoing to introduce additional capabilities.\n\n\nUsage Guides\nApple Wallet Background Guide\nStep-by-step guide for changing Apple Wallet pass/card backgrounds using EnsWilde:\n\ud83d\udd17 https://gist.github.com/YangJiiii/06daf0c2d0fa11002757e501622353ea\n\nPasscode Background Guide\nDetailed instructions on customizing the passcode keypad background using .passthm:\n\ud83d\udd17 https://gist.github.com/YangJiiii/67c6323cf4b7fd8487fcd6e2c8fb4233\n\nGetting Your .mobiledevicepairing File (Impactor)\nEnsWilde uses Impactor to automatically handle pairing.\n\ud83d\udd17 https://github.com/khcrysalis/Impactor\nSteps\n\nDownload and open Impactor on your computer.\nConnect your iPhone or iPad via USB.\nIn Impactor, select EnsWilde.\nClick Import.\nImpactor will automatically generate and inject the required pairing data.\n\nNo manual export or file transfer is required.\n\nSetting Up VPN\n\nDownload LocaldevVPN from the iOS App Store.\nEnable the VPN inside the app.\nLaunch EnsWilde.\n\n\nCredits\nSpecial thanks to the following for their contributions and support:\n\nCarrot1211: For cheering me on and supporting me during development\n@khanhduytran0: SparseBox\n@Little_34306: Original concept for \"Disable Call Recording\"\n@SideStore team: idevice and C bindings from StikDebug\n@JJTech0130: SparseRestore and backup exploit\n@hanakim3945: bl_sbx exploit files and writeup\n@Lakr233: BBackupp\n@libimobiledevice: Underlying communication libraries\n@PoomSmart: MobileGestalt dump\n@paragonarsi: Apple Wallet Get\n@iTechExpert21: Hide Dynamic Island",
             "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.yangjiii.EnsWilde.png",
             "tintColor": "#db7e21",
             "versions": [
                 {
-                    "version": "latest",
-                    "date": "2026-04-04T00:00:00Z",
-                    "localizedDescription": "EnsWilde (Mobile)\nEnsWilde is a tool utilizing itunesstored & bookassetd exploits, designed for iPhone and iPad running the latest iOS Version 26.2b1.\nIt operates as a standalone on-device application, functioning independently like modern apps. It leverages the sparserestore exploit to write data to files situated outside of the intended restore location.\n\n[!WARNING]\nDISCLAIMER:\nI am not responsible if your device enters a bootloop. Use this software with caution.\nPlease back up your data before using!\n\n\nFeatures\n\nDisable call recording notification sound: Turns off the audible alert when call recording starts.\nChange Apple Wallet background image: Customize the background appearance of Wallet passes/cards.\nEdit MobileGestalt file (advanced): Modify MobileGestalt configuration values (for advanced users).\nChange Passcode background: Customize the numeric keypad appearance using the .passthm interface.\nOn-device patching (no PC required): Operates as a standalone app after the initial setup.\nMore features coming soon: Development is ongoing to introduce additional capabilities.\n\n\nUsage Guides\nApple Wallet Background Guide\nStep-by-step guide for changing Apple Wallet pass/card backgrounds using EnsWilde:\n\ud83d\udd17 https://gist.github.com/YangJiiii/06daf0c2d0fa11002757e501622353ea\n\nPasscode Background Guide\nDetailed instructions on customizing the passcode keypad background using .passthm:\n\ud83d\udd17 https://gist.github.com/YangJiiii/67c6323cf4b7fd8487fcd6e2c8fb4233\n\nGetting Your .mobiledevicepairing File (Impactor)\nEnsWilde uses Impactor to automatically handle pairing.\n\ud83d\udd17 https://github.com/khcrysalis/Impactor\nSteps\n\nDownload and open Impactor on your computer.\nConnect your iPhone or iPad via USB.\nIn Impactor, select EnsWilde.\nClick Import.\nImpactor will automatically generate and inject the required pairing data.\n\nNo manual export or file transfer is required.\n\nSetting Up VPN\n\nDownload LocaldevVPN from the iOS App Store.\nEnable the VPN inside the app.\nLaunch EnsWilde.\n\n\nCredits\nSpecial thanks to the following for their contributions and support:\n\nCarrot1211: For cheering me on and supporting me during development\n@khanhduytran0: SparseBox\n@Little_34306: Original concept for \"Disable Call Recording\"\n@SideStore team: idevice and C bindings from StikDebug\n@JJTech0130: SparseRestore and backup exploit\n@hanakim3945: bl_sbx exploit files and writeup\n@Lakr233: BBackupp\n@libimobiledevice: Underlying communication libraries\n@PoomSmart: MobileGestalt dump\n@paragonarsi: Apple Wallet Get\n@iTechExpert21: Hide Dynamic Island",
-                    "downloadURL": "#",
-                    "size": 0
+                    "version": "EnsWilde3.1.3",
+                    "date": "2026-02-25T15:28:02Z",
+                    "localizedDescription": "EnsWilde v3.1.3\nUpdates\n\nYou can now download DDI, fully resolving all DDI-related issues (updated via Settings)\n\nFeatures\n\nAdded an option to hide the Dynamic Island in Theme UI\n(A device restart is required for this feature to take effect)\nAdded Feature Flags for in-app functionalities\n(A device restart is required for this feature to take effect)\nzpatch Custom no longer requires a password\n\nGuides\n\nUpdated the guide for obtaining default passcode files and Apple Wallet files\n(You will need a Mac or a device that can receive AirDrop)\n(The guide is available in Settings)\n",
+                    "downloadURL": "https://github.com/YangJiiii/EnsWilde/releases/download/EnsWilde3.1.3/EnsWilde.ipa",
+                    "size": 13591314
+                },
+                {
+                    "version": "EnsWilde3.1.2",
+                    "date": "2026-02-01T14:58:19Z",
+                    "localizedDescription": "Fixes & Improvements\nBug Fixes\n\nFixed StkJIT Code = -1 and StkJIT Code = -60\nFixed application crash caused by outdated or invalid pairing files\nA warning message is now shown instead of crashing when an old pairing file is detected\n\nTesting & Verification\n\nTested and confirmed working on LiveContainer\nSigned using a personal certificate\n\n\nThank you for using and supporting the project.",
+                    "downloadURL": "https://github.com/YangJiiii/EnsWilde/releases/download/EnsWilde3.1.2/EnsWilde.ipa",
+                    "size": 13615407
+                },
+                {
+                    "version": "EnsWilde3.1.1",
+                    "date": "2026-01-22T11:37:58Z",
+                    "localizedDescription": "Changelog\nBug Fixes\n\nFixed an issue where rdar was not working in Mobile Gestalt\n\nNew Features\n\nAdded a Themes Store to download passcode themes  \nYou can also create your own custom theme  \nContact me if you want your theme to be added\n\nLanguage Support\n\nAdded multi-language support \nIf you want to contribute a new language, please contact me\n",
+                    "downloadURL": "https://github.com/YangJiiii/EnsWilde/releases/download/EnsWilde3.1.1/EnsWilde.ipa",
+                    "size": 13564791
+                },
+                {
+                    "version": "EnsWilde3.1",
+                    "date": "2026-01-19T15:53:10Z",
+                    "localizedDescription": "\u2705 Update Notes\nFixed\n\nDDI issue has been resolved\n\nImprovements\n\nAdded multi-language support\n\nNew Features\n\nUI Theme option added  \nAllows disabling the Liquid Glass effect for a cleaner and smoother interface\n",
+                    "downloadURL": "https://github.com/YangJiiii/EnsWilde/releases/download/EnsWilde3.1/EnsWilde.ipa",
+                    "size": 13311776
+                },
+                {
+                    "version": "EnsWilde3.0",
+                    "date": "2026-01-18T07:14:23Z",
+                    "localizedDescription": "\nNo longer requires StikDebug: You only need to enable LocalDevVPN for it to work.\nApp improvements: Enhanced application performance and stability.\n",
+                    "downloadURL": "https://github.com/YangJiiii/EnsWilde/releases/download/EnsWilde3.0/EnsWilde.ipa",
+                    "size": 12773718
                 }
             ]
         },
@@ -539,7 +567,7 @@
             "name": "YTLitePlus",
             "bundleIdentifier": "com.google.ios.youtube",
             "developerName": "YTLitePlus",
-            "subtitle": "YouTube with ad-blocking and background playback.",
+            "subtitle": "\u26a0\ufe0f DEPRECATED \u2014 DEAD for now as YTPlus is now paid.",
             "localizedDescription": "[!WARNING]\nThis repository is deprecated and should not be used. I may never update it as YTPlus is now paid.",
             "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
             "tintColor": "#cf2f1d",
@@ -557,7 +585,7 @@
             "name": "uYouEnhanced",
             "bundleIdentifier": "com.google.ios.youtube.enhanced",
             "developerName": "arichornlover",
-            "subtitle": "The ultimate YouTube mod with media downloading.",
+            "subtitle": "uYouEnhanced (by @arichornlover) is an expanded version of uYou+ (made by @qnblackcat) with additional features and mainly made for non jailbroken users!",
             "localizedDescription": "About the future of the uYouEnhanced Project (Updated, June 13, 2025)\nHey everyone,\nJust wanted to give you an update about uYouEnhanced. I\u2019m not 100% leaving or anything, but I won\u2019t be maintaining this tweak much like before. I\u2019ll still drop some github commits now and then to try and improve uYouEnhanced, but there\u2019s just no way I can ever get through and solve the 300+ known existing issues in this github repository.\nI do my best to fix stuff when some issues pop up, but it sometimes usually doesn\u2019t work out. I do even suggest workarounds, but they might not work perfectly or might mot even work, especially with the latest YouTube version changes.\nBut as of writing this, I\u2019d recommend using uYouEnhanced with YouTube version v20.22.1 or higher.\nThanks for understanding!\nAnd thanks to the developers qnblackcat, PoomSmart & other  allowing me to expand this fork from where it is today!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n[!NOTE]\nuYouEnhanced is a modified version of uYou. Please DO NOT bother MiRO92 with issues unrelated to uYou!\n\nTable of Contents\n\n\n\n\n\n\n\n\nCredits\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeatures\n\n\nuYou: uYou has a ton of features that I can't list them all. Visit here for more info!\n\n\niSponsorBlock: Skips annoying sponsor ads inside videos. iSponsorBlock is based on SponsorBlock engine. Basically, this is the iOS version of the SponsorBlock extension.\n\n\nYouPiP: enable YouTube's native PiP. More options are in YouTube Settings - General.\n\n\nYTUHD: unlock VP9 codec and in effect, enables video quality of 2K and 4K. You can enable/disable YTUHD in YouTube Settings - Video quality preferences.\n\n\n\nAnd many more...!\n\n5. **YTClassicVideoQuality:** Since YouTube v16.xx, changing video quality requires an extra step. YTClassicVideoQuality brings back the old video quality selector, which is more user-friendly than the new one.\n\n6. **YTNoHoverCards:** This tweak offers the option to enable or disable the annoying suggested videos that appear at the end of YouTube videos.\n\n7. **YouRememberCaption:** YouRememberCaption makes YouTube remember your video caption setting (if not already).\n\n8. **NoYTPremium:** NoYTPremium removes YouTube Premium upsells, preventing the ads and promotions for YouTube Premium from appearing.\n\n9. **YTSpeed:** YTSpeed adds additional playback speed options of 2.25x, 2.5x, 2.75x, 3x and more to the YouTube app, providing more flexibility in video playback speed.\n\n10. **YTMiniplayerEnabler:** YTMiniplayerEnabler enables the Miniplayer feature for all YouTube videos.\n\n11. **DontEatMyContent:** This tweak prevents the notch or Dynamic Island from obstructing 2:1 video content on YouTube, ensuring a better viewing experience.\n\n12. **YTABConfig:** This tweak gives users control over YouTube's A/B testing flags, allowing them to enable or disable experimental features.\n\n13. **YouMute:** YouMute provides a button to mute YouTube videos in the video player, offering a convenient way to toggle the audio on and off.\n\n14. **YouQuality:** YouQuality provides a button to change the video quality of YouTube videos in the video player, allowing quick access to different quality options.\n\n15. **YouTimeStamp:** YouTimeStamp provides a button to copy the video url with the timestamp of whatever part of the video you are currently on.\n\n16. **YTVideoOverlay:** YTVideoOverlay adds buttons to overlay the video, providing quick access to features like captions, speed control, and quality settings.\n\n17. **NotificationsTab:** This tweak recreates the Notifications Tab that was removed from the YouTube App back in 2020, also the tweak includes customization for the tab if you are feeling nostalgic.\n\n18. **YTAppVersionSpoofer:** This tweak allows users to spoof the version of the YouTube app they are using, this is designed to spoof to older YouTube App versions. This can be useful for bypassing certain version checks or retaining features that may have been removed/disabled in newer updates. **<-- uYouEnhanced Exclusive Feature (subject to change)**\n\n19. **LowContrastMode:** LowContrastMode is a tweak that allows users to darken the text in the YouTube app, making it easier to read. which sadly suffers from incompatibility issues and doesn't work right now as of March 19th 2025. **<-- uYouEnhanced Exclusive Feature (subject to change)**\n\n\nKnown issues\n\n\nuYou: Issues related to uYou are listed here. Because uYou is not being updated frequently, we recommended creating bug reports on this repo.\n\n\nIssues related to uYouEnhanced can be found here.\n\n\nDownload\n\nThe latest version of uYouEnhanced can be found under Releases.\nCompatibility: Requires iOS/iPadOS 16.0 or later.\n\nFor AltStore user: \n\n\nMy official AltStore repo (uYouEnhanced - iOS 16+): https://therealfoxster.github.io/altsource-viewer/view/?source=https://raw.githubusercontent.com/arichornlover/arichornlover.github.io/main/apps.json\n\n\nOpen in AltStore (v20.44.2-3.0.4) - It will take a while to install because AltStore needs to download the IPA first.\n\nNEWS - Nov 27 2024: Please be aware that some of the uYou features aren't working in newer versions of YouTube.\n\n\nVersion information (last updated: Feb 24, 2026)\n\n| **Tweaks/App** | **Developer** | **Version** | **Open source** |\n| - | - | :-: | :-:  |\n| **YouTube** | Google Inc | 20.44.2 | \u2716\ufe0e |\n| [uYou](https://github.com/MiRO92/uYou-for-YouTube) | [MiRO92](https://twitter.com/miro92) | 3.0.4 | \u2716\ufe0e |\n| **OpenYoutubeAndShorts** | [CrossiDev-Studio](https://github.com/CrossiDev-Studio) | 1.0 | [\u2714\ufe0e](https://github.com/CrossiDev-Studio/OpenYoutubeAndShorts) |\n| **iSponsorBlock** | [Galactic-Dev](https://github.com/Galactic-Dev) | 1.2.13 | [\u2714\ufe0e](https://github.com/Galactic-Dev/iSponsorBlock) |\n| **BigYTMiniPlayer** | [Galactic-Dev](https://github.com/Galactic-Dev) | 1.0-1 | [\u2714\ufe0e](https://github.com/Galactic-Dev/BigYTMiniPlayer) |\n| **YTNoHoverCards** | [level3tjg](https://twitter.com/level3tjg) | 0.0.3 | [\u2714\ufe0e](https://github.com/level3tjg/YTNoHoverCards) |\n| **YTMiniplayerEnabler** | [level3tjg](https://twitter.com/level3tjg) | 0.0.3 | [\u2714\ufe0e](https://github.com/level3tjg/YTMiniplayerEnabler) |\n| **DontEatMyContent** | [therealFoxster](https://github.com/therealFoxster) | 1.1.11 | [\u2714\ufe0e](https://github.com/therealFoxster/DontEatMyContent) |\n| **YTSpeed** | [Lyvendia](https://github.com/Lyvendia) | 1.0.1 | [\u2714\ufe0e](https://github.com/Lyvendia/YTSpeed) |\n| **Alderis Color Picker** | [HASHBANG Productions](https://github.com/hbang) | 1.2 | [\u2714\ufe0e](https://github.com/hbang/Alderis) |\n| **YTUHD** | [PoomSmart](https://twitter.com/poomsmart) | 2.2.3 | [\u2714\ufe0e](https://github.com/PoomSmart/YTUHD) |\n| **YouLoop** | [bhackel](https://github.com/bhackel) | 1.1.0 | [\u2714\ufe0e](https://github.com/bhackel/YouLoop) |\n| **YouMute** | [PoomSmart](https://twitter.com/poomsmart) | 1.3.3 | [\u2714\ufe0e](https://github.com/PoomSmart/YouMute) |\n| **YouPiP** | [PoomSmart](https://twitter.com/poomsmart) | 1.12.10 | [\u2714\ufe0e](https://github.com/PoomSmart/YouPiP) |\n| **YouQuality** | [PoomSmart](https://twitter.com/poomsmart) | 1.3.6 | [\u2714\ufe0e](https://github.com/PoomSmart/YouQuality) |\n| **YouSpeed** | [PoomSmart](https://twitter.com/poomsmart) | 1.6.2 | [\u2714\ufe0e](https://github.com/PoomSmart/YouSpeed) |\n| **YouTimeStamp** | [arichornlover](https://github.com/arichornlover) | 1.1.0 | [\u2714\ufe0e](https://github.com/aricloverextra/YouTimeStamp) |\n| **IAmYouTube** | [PoomSmart](https://twitter.com/poomsmart) | 1.3.1 | [\u2714\ufe0e](https://github.com/PoomSmart/IAmYouTube) |\n| **YTABConfig** | [PoomSmart](https://twitter.com/poomsmart) | 1.9.1 | [\u2714\ufe0e](https://github.com/PoomSmart/YTABConfig) |\n| **YTIcons** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.0 | [\u2714\ufe0e](https://github.com/PoomSmart/YTIcons) |\n| **YTReExplore** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.4 | [\u2714\ufe0e](https://github.com/PoomSmart/YTReExplore) |\n| **NoYTPremium** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.6 | [\u2714\ufe0e](https://github.com/PoomSmart/NoYTPremium) |\n| **YTNoPaidPromo** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.0 | [\u2714\ufe0e](https://github.com/PoomSmart/YTNoPaidPromo) |\n| **YouRememberCaption** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.0 | [\u2714\ufe0e](https://poomsmart.github.io/repo/depictions/youremembercaption.html) |\n| **Return YouTube Dislike** | [PoomSmart](https://twitter.com/poomsmart) | 1.13.17 | [\u2714\ufe0e](https://github.com/PoomSmart/Return-YouTube-Dislikes) |\n| **YouTube-X** | [PoomSmart](https://twitter.com/poomsmart) | 1.7.17 | [\u2714\ufe0e](https://github.com/PoomSmart/YouTube-X) |\n| **YTVideoOverlay** | [PoomSmart](https://twitter.com/poomsmart) | 2.3.5 | [\u2714\ufe0e](https://github.com/PoomSmart/YTVideoOverlay) |\n| **YouGroupSettings** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.8 | [\u2714\ufe0e](https://github.com/PoomSmart/YouGroupSettings) |\n| **YTHoldForSpeed** | [joshuaseltzer](https://github.com/joshuaseltzer) | 1.2.3 | [\u2714\ufe0e](https://github.com/joshuaseltzer/YTHoldForSpeed) |\n| **YTweaks** | [fosterbarnes](https://github.com/fosterbarnes) | 0.4.0 | [\u2714\ufe0e](https://github.com/fosterbarnes/YTweaks) |\n| **LowContrastMode** | [arichornlover](https://github.com/arichornlover) | 1.8.0 | [\u2714\ufe0e](https://github.com/arichornlover/YTLowContrastMode) |\n\n\nuYou Tweak Compatibility List (Deprecated List)\n| Developer | Tweak Name and Version | App Version Compatibility | iOS Version Compatibility | List Removal |\n|-----------|-----------------------|--------------------------|--------------------------|--------------------------|\n| MiRO92 | uYou 3.0.2 / 3.0.3 | v19.06.2 - v19.15.1 | iOS 15 - iOS 18 |\n| MiRO92 | uYou 3.0.4 | v19.20.2 - v19.22.6 | iOS 15 - iOS 18 |\nBuilding\nSee arichornlover/Building - Wiki\nor qnblackcat/Building - Wiki.\nInstallation\nSee Installation - Wiki.\nSupport the developers\n\n\u00a0\n\n\n\u00a0\n\n\n\u00a0\n\n\n\u00a0\n\n\u00a0\n\n\u00a0\n\nWiki\nSee arichornlover - Wiki or qnblackcat - Wiki\nLightweight Alternative - YTLite / YTLitePlus\n\nRead more\n\n# Switch from uYouEnhanced to either YTLite or YTLitePlus (optional)\n\nHello, this is here to showcase this tweak. I have been seeing the posts about the YTLitePlus tweak on Reddit for quite some time now and decided to add it here. Before you download or check out the tweak, you should take a look at the pros and cons below to learn more about YTLitePlus.\n\nhttps://github.com/YTLitePlus/YTLitePlus/releases\n\n**YTLitePlus - Pros**\n\n- YTLitePlus is stable and more customizable than uYouPlus/uYouEnhanced. (same goes for the regular YTLite, it's stable based on my testing of using it)\n\n- YTLitePlus provides more features in YTLite & YTLitePlus Sections in Settings that uYouPlus/uYouEnhanced may not have.\n\n- YTLitePlus includes a lightweight and simplified version of the App Version Spoofer, making it easier to use.\n\n- YTLitePlus does not cause your device to overheat, unlike uYouPlus/uYouEnhanced.\n\n- YTLitePlus provides faster video & audio downloading than uYouPlus/uYouEnhanced.\n\n**YTLitePlus - Cons**\n\n- Video quality on WiFi option is not available in YTLitePlus.\n\n- Reordering the pivot bar tabs such as `Home`, `Shorts`, `Explore`, `Trending`, `Create`, `Subscriptions` & `You` is not available in YTLitePlus.",
             "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/empty.png",
             "tintColor": "#cf2f1d",
@@ -574,8 +602,8 @@
         {
             "name": "Enmity",
             "bundleIdentifier": "com.enmity.discord",
-            "developerName": "Enmity Team",
-            "subtitle": "Modified Discord client with themes and plugins.",
+            "developerName": "enmity-mod",
+            "subtitle": "\ud83e\udde9 The power of addons, all in your hand. Built on top of @discord.",
             "localizedDescription": "Enmity\n   Enmity is a project built on top of @discord to provide plug-ins and themes along with access to internal Discord functionality.\n\n   Installation guide can be found [here](https://github.com/enmity-mod/enmity/blob/main/docs/install.md).\n   Developer guide can be found [here](https://github.com/enmity-mod/enmity/blob/main/docs/developers.md).",
             "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.enmity.discord.png",
             "tintColor": "#6a218f",
@@ -593,17 +621,157 @@
             "name": "BHTwitter",
             "bundleIdentifier": "com.atebits.Tweetie2",
             "developerName": "BandarHL",
-            "subtitle": "Twitter with no ads and video downloading.",
+            "subtitle": "Awesome tweak for Twitter",
             "localizedDescription": "BHTwitter\nAn awesome tweak for Twitter that enhances your experience with additional features and customization options. Get rid of ads, gain access to Twitter Blue features for free and much much more! \n\n[!WARNING]\nPlease do not create issues regarding sign in or Tweeting.Twitter/X have added Attestation to prevent the use of third-paty or modified clients. We cannot do anything against this. Please do not create new issues regarding this. \n\nFeatures\nPlease note that we heavily rely on feature flags. If a feature doesn't work anymore, it's beacuse Twitter most likely removed support for it.\nGeneral Enhancements\n\nDownload videos (even from private accounts)\nLoad photos in highest quality available\nSave Tweets as images\nUndo Tweet\nEnable voice Tweets & voice messages in DM\nEnable new DM search UI\n\nUI Customization\n\nCustom tab bar\nThemes (like Twitter Blue)\nApp icon changer\nFont changer\nPadlock\nDisable edge-to-edge Tweet style\nAlways open in Safari\nHide Spaces bar\nHide topics Tweets\nNo history feature\nDisable RTL (Right-To-Left)\nDisable video layer caption\n\nInteraction & Behavior\n\nTwitter Circle feature\nCopy profile information\nTranslate bio\nConfirm alerts on:\nTweet\nLike\nFollow\n\nDeveloper Tools\n\nFLEX debugging tool\n\nScreenshots\n|  |  |  |\n|:----------:|:----------:|:----------:|\n|  |\nBuilding BHTwitter\nLocal Setup\n\nInstall Theos\nInstall cyan (for sideload or TrollStore builds)\n\nbash\ngit clone --recursive https://github.com/BandarHL/BHTwitter\ncd BHTwitter\nchmod +x ./build.sh\n./build.sh [OPTIONS]\nOptions:\n\n--rootfull : Build for rootfull deployment\n--rootless : Build for rootless deployment\n--trollstore : Build for TrollStore deployment\n(No option) or --sideloaded : Build for sideloaded deployment \n\nGitHub Actions\n\nFork this repository\nEnable workflows in the Actions tab\nSelect the Build and Release BHTwitter workflow\nInput required parameters and run the workflow\nChoose deployment type (rootfull, rootless, sideloaded, trollstore)\nFor sideloaded/trollstore: provide a valid URL to decrypted IPA\nFor rootfull/rootless: any value works\n\nExamples\nSideloaded\n```bash\nPlace your IPA file in the packages folder. It needs to be named \"com.atebits.Tweetie2.ipa\"\nThen run\n./build.sh --sideloaded\nYou'll get BHTwitter-sideloaded.ipa in the packages folder.\n```\nTrollStore\n```bash\nPlace your IPA file in the packages folder. It needs to be named \"com.atebits.Tweetie2.ipa\"\nThen run\n./build.sh --trollstore\nYou'll get BHTwitter-trollstore.ipa in the packages folder.\n```\nRootless\n```bash\nSimply run\n./build.sh --rootless\nYou'll get: com.bandarhl.bhTwitter_4.2_iphoneos-arm64.deb\n```\nRootfull\n```bash\nSimply run\n./build.sh --rootfull\nYou'll get: com.bandarhl.bhTwitter_4.2_iphoneos-arm.deb\n```",
             "iconURL": "https://raw.githubusercontent.com/dsewerek/iOS-Repo/main/scrapedIcons/com.atebits.Tweetie2.png",
             "tintColor": "#2f76bd",
             "versions": [
                 {
-                    "version": "latest",
-                    "date": "2026-04-04T00:00:00Z",
-                    "localizedDescription": "BHTwitter\nAn awesome tweak for Twitter that enhances your experience with additional features and customization options. Get rid of ads, gain access to Twitter Blue features for free and much much more! \n\n[!WARNING]\nPlease do not create issues regarding sign in or Tweeting.Twitter/X have added Attestation to prevent the use of third-paty or modified clients. We cannot do anything against this. Please do not create new issues regarding this. \n\nFeatures\nPlease note that we heavily rely on feature flags. If a feature doesn't work anymore, it's beacuse Twitter most likely removed support for it.\nGeneral Enhancements\n\nDownload videos (even from private accounts)\nLoad photos in highest quality available\nSave Tweets as images\nUndo Tweet\nEnable voice Tweets & voice messages in DM\nEnable new DM search UI\n\nUI Customization\n\nCustom tab bar\nThemes (like Twitter Blue)\nApp icon changer\nFont changer\nPadlock\nDisable edge-to-edge Tweet style\nAlways open in Safari\nHide Spaces bar\nHide topics Tweets\nNo history feature\nDisable RTL (Right-To-Left)\nDisable video layer caption\n\nInteraction & Behavior\n\nTwitter Circle feature\nCopy profile information\nTranslate bio\nConfirm alerts on:\nTweet\nLike\nFollow\n\nDeveloper Tools\n\nFLEX debugging tool\n\nScreenshots\n|  |  |  |\n|:----------:|:----------:|:----------:|\n|  |\nBuilding BHTwitter\nLocal Setup\n\nInstall Theos\nInstall cyan (for sideload or TrollStore builds)\n\nbash\ngit clone --recursive https://github.com/BandarHL/BHTwitter\ncd BHTwitter\nchmod +x ./build.sh\n./build.sh [OPTIONS]\nOptions:\n\n--rootfull : Build for rootfull deployment\n--rootless : Build for rootless deployment\n--trollstore : Build for TrollStore deployment\n(No option) or --sideloaded : Build for sideloaded deployment \n\nGitHub Actions\n\nFork this repository\nEnable workflows in the Actions tab\nSelect the Build and Release BHTwitter workflow\nInput required parameters and run the workflow\nChoose deployment type (rootfull, rootless, sideloaded, trollstore)\nFor sideloaded/trollstore: provide a valid URL to decrypted IPA\nFor rootfull/rootless: any value works\n\nExamples\nSideloaded\n```bash\nPlace your IPA file in the packages folder. It needs to be named \"com.atebits.Tweetie2.ipa\"\nThen run\n./build.sh --sideloaded\nYou'll get BHTwitter-sideloaded.ipa in the packages folder.\n```\nTrollStore\n```bash\nPlace your IPA file in the packages folder. It needs to be named \"com.atebits.Tweetie2.ipa\"\nThen run\n./build.sh --trollstore\nYou'll get BHTwitter-trollstore.ipa in the packages folder.\n```\nRootless\n```bash\nSimply run\n./build.sh --rootless\nYou'll get: com.bandarhl.bhTwitter_4.2_iphoneos-arm64.deb\n```\nRootfull\n```bash\nSimply run\n./build.sh --rootfull\nYou'll get: com.bandarhl.bhTwitter_4.2_iphoneos-arm.deb\n```",
-                    "downloadURL": "#",
-                    "size": 0
+                    "version": "4.4",
+                    "date": "2025-05-13T20:33:01Z",
+                    "localizedDescription": "Update BHTwitter 4.4:\n- Fix all the crashes in the newer versions.\n- Add the new tabs to the hide page.\n- New feature: DM replay later page and tags.\n- New feature: Upload 4K media.\n- New feature: Voice feature in posts and replies.\n- Update the localizations.\n- Remove unnecessary options.\nThanks for:\n- @actuallyaridan\n- @Tulugaak",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/4.4/BHTwitter-sideloaded.ipa",
+                    "size": 167001383
+                },
+                {
+                    "version": "4.3",
+                    "date": "2024-02-10T18:04:33Z",
+                    "localizedDescription": "\nUpload custom voice\nSelect URL host like fxtwitter or vxtwitter of tweet after copy.\nremove unnecessary options.\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/4.3/BHTwitter-sideloaded.ipa",
+                    "size": 126768317
+                },
+                {
+                    "version": "4.2-1",
+                    "date": "2023-12-17T19:31:13Z",
+                    "localizedDescription": "",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/4.2-1/BHTwitter-sideloaded.ipa",
+                    "size": 130408354
+                },
+                {
+                    "version": "4.2",
+                    "date": "2023-12-14T05:59:08Z",
+                    "localizedDescription": "\nMoved from Monkeydev to Theos\nConvert all swift files to Objective-c.\nAdd new script to build BHTwitter project easily.\nSupport JB rootfull and rootless.\nFix crashing in downloading longer video and freezing using FFmpeg.\nNew option to hide bookmark button.\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/4.2/BHTwitter-sideloaded.ipa",
+                    "size": 130408247
+                },
+                {
+                    "version": "4.1",
+                    "date": "2023-12-08T18:17:14Z",
+                    "localizedDescription": "\nFix downloading video without sound using FFmpeg.\nAdd app icon changer (works just for JB and Trollstore)\n\nRemove unnecessarily features.\n\n\nffmpeg-kit\n\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/4.1/Twitter_10.19_BHTwitter_4.1.ipa",
+                    "size": 163435830
+                },
+                {
+                    "version": "4.0",
+                    "date": "2023-08-29T03:59:59Z",
+                    "localizedDescription": "\nAdd stopHidingTabBar\nAdd advanced search\nAdd change Background of direct msg\nFix removing trackingParams from URL\nFix show images as Full frame\nRemove unnecessary options\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/4.0/BHTwitter-sideload.ipa",
+                    "size": 99532305
+                },
+                {
+                    "version": "3.9.1",
+                    "date": "2023-03-14T05:32:31Z",
+                    "localizedDescription": "What's new in the 3.9.1 update:\n- Add a new option to force Twitter to always use the following page.",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.9.1/Twitter_9.49_BHTwitter_3.9.1-TrollStore.ipa",
+                    "size": 96029159
+                },
+                {
+                    "version": "3.9",
+                    "date": "2023-03-06T15:41:56Z",
+                    "localizedDescription": "What's new in the 3.9 update:\n- Fix crash with TrollStore.\n- Add a new option to show the scroll bar again.\nThanks:\n@arandomdev ",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.9/Twitter_9.47_BHTwitter_3.9-TrollStore.ipa",
+                    "size": 95320317
+                },
+                {
+                    "version": "3.8",
+                    "date": "2023-03-04T05:58:15Z",
+                    "localizedDescription": "What's new in the 3.8 update:\n\nFix crash with Twitter 9.47\nRemove tweet source option\nAdd new feature to disable the new video player (Immersive Player)\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.8/Twitter_9.47_BHTwitter_3.8-TrollStore.ipa",
+                    "size": 87331404
+                },
+                {
+                    "version": "3.7",
+                    "date": "2023-01-13T15:32:28Z",
+                    "localizedDescription": "\nNew option to Remove tracking params from tweet URLs when it's copy\nNew option to Add forcing tweets to use full-frame images\nMove Font hooking to Runtime\nFix crash with Twitter 9.40\n\nThanks, @ExTBH ",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.7/Twitter_9.40_BHTwitter_3.7-TrollStore.ipa",
+                    "size": 94807701
+                },
+                {
+                    "version": "3.6",
+                    "date": "2023-01-07T18:09:24Z",
+                    "localizedDescription": "\nFix unexpected crashes while copying from the profile.\nNew option to bring Tweet source back.\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.6/Twitter_9.39_BHTwitter_3.6-TrollStore.ipa",
+                    "size": 97136048
+                },
+                {
+                    "version": "3.5",
+                    "date": "2022-12-25T18:56:44Z",
+                    "localizedDescription": "\nNew option to hide views count\nFix save tweet as image issue\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.5/Twitter_9.38_BHTwitter_3.5-TrollStore.ipa",
+                    "size": 99440344
+                },
+                {
+                    "version": "3.4",
+                    "date": "2022-12-18T16:49:17Z",
+                    "localizedDescription": "\nFix crashes with Twitter 9.37.1\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.4/Twitter_9.37.1_BHTwitter_3.4.ipa",
+                    "size": 102340172
+                },
+                {
+                    "version": "3.3",
+                    "date": "2022-11-25T12:20:48Z",
+                    "localizedDescription": "\nFix downloading videos from multiple media tweet\nTranslate Custom tab bar ViewController\nTranslate Theme ViewController\nUpdate FLEX\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.3/Twitter_9.34.6_BHTwitter_3.3.ipa",
+                    "size": 121791825
+                },
+                {
+                    "version": "3.2",
+                    "date": "2022-10-13T19:28:22Z",
+                    "localizedDescription": "\nFix Downloading videos\nFix Save tweet as image\nFix Like confirmation\nFix Hide spaces bar\nAdd Edit tweet feature [BETA]\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.2/Twitter_9.32_BHTwitter_3.2.ipa",
+                    "size": 119221084
+                },
+                {
+                    "version": "3.1",
+                    "date": "2022-09-10T21:05:40Z",
+                    "localizedDescription": "What's new with the 3.1 version:\n- Fix Ads tweet issues\n- Block Ads in the trending page",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.1/Twitter_9.27_BHTwitter_3.1.ipa",
+                    "size": 151421624
+                },
+                {
+                    "version": "3.0",
+                    "date": "2022-08-23T15:13:53Z",
+                    "localizedDescription": "What's new with the 3.0 version:\n- Add Hide Who to follow section\n- Add Hide Topics to follow section\n- Add Localization to the Tweak (Arabic, Japanese, Russian, Indonesian, zh-Hant)\n- Fix random crashes \n- Fix the location of Copy profile button when enabling Disable RTL option\n\nIPA version contains Open Twitter Safari extension\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/3.0/Twitter_9.26_BHTwitter_3.0.ipa",
+                    "size": 349854182
+                },
+                {
+                    "version": "2.9.9",
+                    "date": "2022-08-02T22:11:27Z",
+                    "localizedDescription": "What's new with the 2.9.9 version:\n- Add Status Tweet (vibe)\n- Fix bugs and performance improvement",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/2.9.9/Twitter_9.20_BHTwitter_2.9.9.ipa",
+                    "size": 300545115
+                },
+                {
+                    "version": "2.9.8",
+                    "date": "2022-07-27T23:04:17Z",
+                    "localizedDescription": "What's new with the 2.9.8 version:\n- Always open in Safari is back!\n- Add CoTweet\n- Fix crash in Twitter settings\n- Remove reply later (because Twitter delete it)\n- Remove voice in reply (because it's useless)\n- Add copy location\n- Rebuild Settings with Preferences and Cephei framework",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/2.9.8/Twitter_9.20_BHTwitter_2.9.8.ipa",
+                    "size": 161501645
+                },
+                {
+                    "version": "2.9.7",
+                    "date": "2022-07-05T14:23:51Z",
+                    "localizedDescription": "What's new with the 2.9.7 version:\n\nAdd new feature: Theme like Twitter blue\nAdd a new feature: Hide spaces bar\nAdd a new feature: Disable RTL\nFix RTL issue with Save tweet as an image\nFix the colour issue with Save tweet as an image\nFix voice in DM feature\nFix issues with the Font feature\nFix Auto Highest Load feature\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/2.9.7/Twitter_9.15.2_BHTwitter_2.9.7.ipa",
+                    "size": 110188234
+                },
+                {
+                    "version": "2.9.6",
+                    "date": "2022-06-25T16:15:31Z",
+                    "localizedDescription": "What's new with the 2.9.6 version:\n\nNew feature: Save tweets as images.\nFix Padlock feature issues.\nFix Tweet confirm option.\n",
+                    "downloadURL": "https://github.com/BandarHL/BHTwitter/releases/download/2.9.6/Twitter_9.14_BHTwitter_2.9.6.ipa",
+                    "size": 106622520
                 }
             ]
         }
